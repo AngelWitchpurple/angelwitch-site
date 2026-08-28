@@ -39,3 +39,10 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 
 });
+function copyPix() {
+  const pix = document.getElementById("pixKey").innerText;
+
+  navigator.clipboard.writeText(pix);
+
+  alert("Chave Pix copiada!");
+}
