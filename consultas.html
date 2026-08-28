@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,10 +6,7 @@
 
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Consultas | Angel WITCH</title>
 
@@ -26,7 +24,7 @@
   <div class="universe"></div>
   <div class="stars"></div>
 
-  <!-- Signos -->
+  <!-- SIGNOS -->
 
   <div class="zodiac zodiac-1">♈</div>
   <div class="zodiac zodiac-2">♓</div>
@@ -36,11 +34,13 @@
   <div class="zodiac zodiac-6">♒</div>
 
 
+  <!-- MENU -->
+
   <header>
 
-    <div class="logo">
+    <a href="index.html" class="logo">
       ☾ <span>ANGEL WITCH</span>
-    </div>
+    </a>
 
     <nav>
 
@@ -303,7 +303,6 @@
 
       </article>
 
-
     </section>
 
 
@@ -325,19 +324,76 @@
         horários disponíveis e realizar seu agendamento.
       </p>
 
-      <!-- TROQUE SEUNUMERO PELO SEU NÚMERO DE WHATSAPP -->
 
-      <a
-        https://wa.me/5534991335673
-        class="pink-button"
-      >
-        Agendar pelo WhatsApp
-      </a>
+      <!-- PIX -->
+
+      <div class="pix-box">
+
+        <div class="pix-icon">
+          ✦
+        </div>
+
+        <p class="service-type">
+          PAGAMENTO VIA PIX
+        </p>
+
+        <h3>
+          Chave Pix
+        </h3>
+
+        <div class="pix-key" id="pixKey">
+          COLOQUE_SUA_CHAVE_PIX_AQUI
+        </div>
+
+        <button
+          type="button"
+          class="pix-button"
+          onclick="copyPix()"
+        >
+          📋 Copiar chave Pix
+        </button>
+
+        <p class="pix-note">
+          Clique no botão para copiar a chave.
+        </p>
+
+      </div>
+
+
+      <!-- WHATSAPP -->
+
+      <div class="whatsapp-box">
+
+        <p class="service-type">
+          AGENDAMENTO
+        </p>
+
+        <h3>
+          Pronto para agendar?
+        </h3>
+
+        <p>
+          Entre em contato pelo WhatsApp para
+          consultar os horários disponíveis.
+        </p>
+
+        <a
+          href="https://wa.me/5534991335673"
+          class="pink-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💬 Agendar pelo WhatsApp
+        </a>
+
+      </div>
 
     </section>
 
   </main>
 
+
+  <!-- RODAPÉ -->
 
   <footer>
 
@@ -355,5 +411,9 @@
 
   </footer>
 
+
+  <script src="script.js"></script>
+
 </body>
 </html>
+```
