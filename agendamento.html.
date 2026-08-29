@@ -1,419 +1,66 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Consultas | Angel WITCH</title>
-
-  <meta
-    name="description"
-    content="Conheça as consultas da Angel WITCH."
-  >
-
-  <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendamento | Angel WITCH</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="universe"></div>
-  <div class="stars"></div>
+<div class="universe"></div>
 
-  <!-- SIGNOS -->
+<header>
 
-  <div class="zodiac zodiac-1">♈</div>
-  <div class="zodiac zodiac-2">♓</div>
-  <div class="zodiac zodiac-3">♏</div>
-  <div class="zodiac zodiac-4">♌</div>
-  <div class="zodiac zodiac-5">♎</div>
-  <div class="zodiac zodiac-6">♒</div>
+<a href="index.html" class="logo">
+☾ ANGEL WITCH
+</a>
 
+</header>
 
-  <!-- MENU -->
+<section class="booking-page">
 
-  <header>
+<h1>Agende sua consulta</h1>
 
-    <a href="index.html" class="logo">
-      ☾ <span>ANGEL WITCH</span>
-    </a>
+<p>
+Escolha o melhor dia e horário.
+</p>
 
-    <nav>
+<div class="calendar-box">
 
-      <a href="index.html">
-        Início
-      </a>
+<label>Escolha a data</label>
 
-      <a href="index.html#sobre">
-        Sobre mim
-      </a>
+<input id="dataConsulta" type="date">
 
-      <a href="consultas.html">
-        Consultas
-      </a>
+<label>Escolha o horário</label>
 
-    </nav>
+<select id="horaConsulta">
 
-  </header>
+<option>18:20</option>
+<option>18:40</option>
+<option>19:00</option>
+<option>19:20</option>
+<option>19:40</option>
+<option>20:00</option>
+<option>20:20</option>
 
+</select>
 
-  <main class="services-page">
+<button onclick="marcarConsulta()">
 
+Confirmar Agendamento
 
-    <!-- CABEÇALHO -->
+</button>
 
-    <section class="services-hero">
+</div>
 
-      <p class="eyebrow">
-        ANGEL WITCH
-      </p>
+<div id="confirmacao"></div>
 
-      <h1>
-        Escolha sua <span>consulta</span>
-      </h1>
+</section>
 
-      <p>
-        Cada leitura possui uma proposta diferente.
-        Escolha aquela que melhor corresponde ao
-        momento que você está vivendo.
-      </p>
-
-    </section>
-
-
-    <!-- CONSULTAS -->
-
-    <section class="services">
-
-
-      <!-- 1 PERGUNTA -->
-
-      <article class="service-card entrance">
-
-        <div class="service-icon">
-          ✧
-        </div>
-
-        <p class="service-type">
-          CONSULTA RÁPIDA
-        </p>
-
-        <h2>
-          1 Pergunta
-        </h2>
-
-        <p>
-          Para quem deseja esclarecer uma questão
-          específica através das cartas.
-        </p>
-
-        <div class="service-price">
-          R$ 7,00
-        </div>
-
-        <a href="#contato" class="pink-button">
-          Fazer uma pergunta
-        </a>
-
-      </article>
-
-
-      <!-- 3 PERGUNTAS -->
-
-      <article class="service-card">
-
-        <div class="service-icon">
-          ✦
-        </div>
-
-        <p class="service-type">
-          CONSULTA AVULSA
-        </p>
-
-        <h2>
-          3 Perguntas
-        </h2>
-
-        <p>
-          Escolha perguntas sobre sua vida
-          amorosa, financeira ou espiritual.
-        </p>
-
-        <div class="service-price">
-          R$ 15,00
-        </div>
-
-        <a href="#contato" class="gold-button">
-          Quero essa consulta
-        </a>
-
-      </article>
-
-
-      <!-- PALÁCIO DO AMOR -->
-
-      <article class="service-card featured">
-
-        <div class="service-icon">
-          ♡
-        </div>
-
-        <p class="service-type">
-          PARA QUEM ESTÁ SEM RELACIONAMENTO
-        </p>
-
-        <h2>
-          Palácio do Amor
-        </h2>
-
-        <p>
-          Uma leitura dedicada à sua vida amorosa
-          e às possibilidades que podem surgir.
-        </p>
-
-        <div class="questions">
-
-          <p>
-            01 — Como está minha vida amorosa atualmente?
-          </p>
-
-          <p>
-            02 — Como posso melhorar minha vida amorosa?
-          </p>
-
-          <p>
-            03 — O que as cartas revelam sobre uma futura vida amorosa?
-          </p>
-
-          <p>
-            04 — O que devo mudar em mim para que minha vida amorosa avance?
-          </p>
-
-          <p>
-            05 — O que as cartas revelam sobre minha alma gêmea?
-          </p>
-
-        </div>
-
-        <div class="service-price">
-          R$ 50,00
-        </div>
-
-        <a href="#contato" class="gold-button">
-          Quero essa consulta
-        </a>
-
-      </article>
-
-
-      <!-- ENERGIA DO MÊS -->
-
-      <article class="service-card">
-
-        <div class="service-icon">
-          ☾
-        </div>
-
-        <p class="service-type">
-          PREVISÃO MENSAL
-        </p>
-
-        <h2>
-          Energia do Mês
-        </h2>
-
-        <p>
-          Uma leitura com 5 cartas para observar
-          as energias, acontecimentos e tendências
-          do seu mês.
-        </p>
-
-        <div class="service-highlight">
-          5 cartas + acontecimentos
-        </div>
-
-        <div class="service-price">
-          R$ 60,00
-        </div>
-
-        <a href="#contato" class="gold-button">
-          Quero essa consulta
-        </a>
-
-      </article>
-
-
-      <!-- MERCÚRIO DO AMOR -->
-
-      <article class="service-card featured">
-
-        <div class="service-icon">
-          ♡
-        </div>
-
-        <p class="service-type">
-          PARA QUEM ESTÁ EM UM RELACIONAMENTO
-        </p>
-
-        <h2>
-          Mercúrio do Amor
-        </h2>
-
-        <p>
-          Uma leitura voltada para compreender
-          melhor a dinâmica e os sentimentos
-          dentro do relacionamento.
-        </p>
-
-        <div class="questions">
-
-          <p>
-            01 — Como estão nossos sentimentos?
-          </p>
-
-          <p>
-            02 — Como podemos melhorar nosso relacionamento?
-          </p>
-
-          <p>
-            03 — Como podemos compreender melhor um ao outro?
-          </p>
-
-          <p>
-            04 — O que a espiritualidade tem a nos dizer sobre nosso relacionamento?
-          </p>
-
-          <p>
-            05 — Qual é o conselho da espiritualidade para nós?
-          </p>
-
-        </div>
-
-        <div class="service-price">
-          R$ 50,00
-        </div>
-
-        <a href="#contato" class="gold-button">
-          Quero essa consulta
-        </a>
-
-      </article>
-
-    </section>
-
-
-    <!-- AGENDAMENTO -->
-
-    <section id="contato" class="booking">
-
-      <p class="eyebrow">
-        AGENDAMENTO
-      </p>
-
-      <h2>
-        Sua consulta começa<br>
-        com uma pergunta.
-      </h2>
-
-      <p>
-        Entre em contato para consultar os
-        horários disponíveis e realizar seu agendamento.
-      </p>
-
-
-      <!-- PIX -->
-
-      <div class="pix-box">
-
-        <div class="pix-icon">
-          ✦
-        </div>
-
-        <p class="service-type">
-          PAGAMENTO VIA PIX
-        </p>
-
-        <h3>
-          Chave Pix
-        </h3>
-
-        <div class="pix-key" id="pixKey">
-          maiamisqui@gmail.com
-        </div>
-
-        <button
-          type="button"
-          class="pix-button"
-          onclick="copyPix()"
-        >
-          📋 Copiar chave Pix
-        </button>
-
-        <p class="pix-note">
-          Clique no botão para copiar a chave.
-        </p>
-
-      </div>
-
-
-      <!-- WHATSAPP -->
-
-      <div class="whatsapp-box">
-
-        <p class="service-type">
-          AGENDAMENTO
-        </p>
-
-        <h3>
-          Pronto para agendar?
-        </h3>
-
-        <p>
-          Entre em contato pelo WhatsApp para
-          consultar os horários disponíveis.
-        </p>
-
-        <a
-          href="https://wa.me/5534991335673"
-          class="pink-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          💬 Agendar pelo WhatsApp
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- RODAPÉ -->
-
-  <footer>
-
-    <div class="footer-logo">
-      ☾ ANGEL WITCH
-    </div>
-
-    <p>
-      Através das cartas, há possibilidades.
-    </p>
-
-    <small>
-      © 2026 Angel WITCH
-    </small>
-
-  </footer>
-
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
-```
