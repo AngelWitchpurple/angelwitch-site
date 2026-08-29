@@ -55,3 +55,38 @@ ${c.consulta}
 }
 
 mostrarClientes();
+
+function marcarConsulta(){
+
+const data=document.getElementById("dataConsulta").value;
+const hora=document.getElementById("horaConsulta").value;
+
+if(!data){
+
+alert("Escolha uma data.");
+
+return;
+
+}
+
+const agendamentos=JSON.parse(localStorage.getItem("agendamentos")||"[]");
+
+agendamentos.push({
+
+data,
+hora
+
+});
+
+localStorage.setItem("agendamentos",JSON.stringify(agendamentos));
+
+document.getElementById("confirmacao").innerHTML=`
+<div class="confirm-box">
+✨ Consulta agendada para
+<strong>${data}</strong>
+às
+<strong>${hora}</strong>.
+</div>
+`;
+
+}
