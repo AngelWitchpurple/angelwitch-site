@@ -1,22 +1,1569 @@
-📅 3. O AGENDAMENTO é o que mais está faltando
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-Essa seria minha prioridade nº 1.
+<head>
 
-A pessoa clica:
+<meta charset="UTF-8">
 
-AGENDAR CONSULTA
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-→ escolhe a tiragem
-→ coloca o nome
-→ coloca o signo
-→ escolhe a data no calendário
-→ escolhe o horário disponível
-→ escreve a pergunta, se a consulta permitir
-→ vê o valor
-→ recebe as instruções para pagamento
+<title>Angel WITCH | Minha Consulta</title>
 
-E no final:
+<meta
+name="description"
+content="Escolha sua consulta na Angel WITCH e prepare-se para sua leitura."
+>
 
-“Seu pedido de consulta foi registrado ✦”
+<style>
 
-Isso muda completamente a sensação do site.
+/* ==============================
+   BASE
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+    color:white;
+
+    background:
+
+    radial-gradient(
+        circle at 50% 0%,
+        #650083,
+        #1b0028 35%,
+        #07000d 75%,
+        #020004
+    );
+
+    overflow-x:hidden;
+}
+
+
+/* ==============================
+   UNIVERSO
+============================== */
+
+.universe{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+
+/* LUA */
+
+.moon{
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    right:5%;
+    top:80px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle at 35% 30%,
+        #fff,
+        #e8c8ff 35%,
+        #ad55e8 65%,
+        #570078
+    );
+
+    box-shadow:
+
+    0 0 30px #fff,
+    0 0 70px #c65cff,
+    0 0 150px #8c00d4;
+
+    animation:pulse 5s infinite ease-in-out;
+}
+
+.moon:after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    left:70px;
+    top:-18px;
+
+    border-radius:50%;
+
+    background:#08000e;
+}
+
+@keyframes pulse{
+
+    50%{
+        transform:scale(1.08);
+    }
+}
+
+
+/* ESTRELAS */
+
+.star{
+
+    position:absolute;
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+    0 0 10px white,
+    0 0 25px #ce70ff;
+
+    animation:
+    twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+
+    0%,100%{
+        opacity:.2;
+        transform:scale(.6);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.7);
+    }
+}
+
+
+/* SÍMBOLOS */
+
+.symbol{
+
+    position:absolute;
+
+    font-size:65px;
+
+    color:rgba(215,145,255,.18);
+
+    text-shadow:
+    0 0 20px #9d00ff,
+    0 0 50px #6800a0;
+
+    animation:
+    float 8s infinite ease-in-out,
+    rotate 25s linear infinite;
+}
+
+.symbol.one{
+    left:4%;
+    top:25%;
+}
+
+.symbol.two{
+    left:10%;
+    bottom:15%;
+    animation-delay:2s;
+}
+
+.symbol.three{
+    right:5%;
+    bottom:30%;
+    animation-delay:4s;
+}
+
+.symbol.four{
+    right:20%;
+    top:25%;
+    animation-delay:6s;
+}
+
+@keyframes float{
+
+    50%{
+        transform:translateY(-25px);
+    }
+}
+
+@keyframes rotate{
+
+    to{
+        rotate:360deg;
+    }
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header{
+
+    position:relative;
+
+    z-index:10;
+
+    padding:22px 7%;
+
+    border-bottom:
+    1px solid
+    rgba(220,140,255,.18);
+
+    background:
+    rgba(5,0,12,.7);
+
+    backdrop-filter:blur(15px);
+}
+
+nav{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+.logo{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    letter-spacing:4px;
+
+    text-shadow:
+    0 0 15px #fff,
+    0 0 35px #a900ff;
+}
+
+.logo span{
+    color:#d078ff;
+}
+
+.back{
+
+    color:#ad9bb7;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+    padding:
+    90px 0 100px;
+}
+
+
+/* ==============================
+   TÍTULO
+============================== */
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+}
+
+.title small{
+
+    color:#cf79ff;
+
+    letter-spacing:5px;
+
+    font-size:10px;
+}
+
+.title h1{
+
+    margin-top:15px;
+
+    font-size:
+    clamp(45px,8vw,75px);
+
+    letter-spacing:5px;
+
+    text-shadow:
+
+    0 0 15px white,
+    0 0 35px #c04dff,
+    0 0 80px #7900b5;
+}
+
+.title p{
+
+    max-width:600px;
+
+    margin:20px auto 0;
+
+    color:#bca9c6;
+
+    line-height:1.8;
+}
+
+
+/* ==============================
+   FORMULÁRIO
+============================== */
+
+.box{
+
+    padding:40px;
+
+    border-radius:28px;
+
+    border:
+    1px solid
+    rgba(213,140,255,.35);
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(59,4,76,.82),
+        rgba(8,0,14,.96)
+    );
+
+    box-shadow:
+
+    0 0 60px
+    rgba(135,0,200,.18);
+}
+
+.label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#e2c5ed;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+}
+
+.field{
+
+    width:100%;
+
+    padding:15px 16px;
+
+    margin-bottom:25px;
+
+    border-radius:12px;
+
+    border:
+    1px solid
+    rgba(211,134,255,.25);
+
+    outline:none;
+
+    color:white;
+
+    background:
+    rgba(255,255,255,.055);
+
+    font-family:inherit;
+
+    font-size:14px;
+}
+
+.field:focus{
+
+    border-color:#c96cff;
+
+    box-shadow:
+    0 0 20px
+    rgba(188,0,255,.2);
+}
+
+textarea.field{
+
+    min-height:120px;
+
+    resize:vertical;
+}
+
+
+/* ==============================
+   CONSULTAS
+============================== */
+
+.consultas{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(210px,1fr)
+    );
+
+    gap:15px;
+
+    margin-bottom:30px;
+}
+
+.consulta{
+
+    cursor:pointer;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    border:
+    1px solid
+    rgba(211,135,255,.25);
+
+    background:
+    rgba(255,255,255,.035);
+
+    transition:.3s;
+}
+
+.consulta:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#d180ff;
+
+    box-shadow:
+    0 0 25px
+    rgba(178,0,255,.25);
+}
+
+.consulta input{
+
+    display:none;
+}
+
+.consulta.selected{
+
+    border-color:#db91ff;
+
+    background:
+    rgba(168,0,255,.16);
+
+    box-shadow:
+    0 0 30px
+    rgba(170,0,255,.22);
+}
+
+.consulta h3{
+
+    font-size:19px;
+
+    margin-bottom:7px;
+}
+
+.consulta p{
+
+    color:#aa98b4;
+
+    font-size:12px;
+
+    line-height:1.6;
+}
+
+.consulta strong{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#df9cff;
+
+    font-size:18px;
+}
+
+
+/* ==============================
+   RESUMO
+============================== */
+
+.resumo{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+    rgba(132,0,190,.12);
+
+    border:
+    1px solid
+    rgba(207,123,255,.25);
+}
+
+.resumo-title{
+
+    color:#d98aff;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+}
+
+#resumoConsulta{
+
+    font-size:25px;
+
+    margin-bottom:7px;
+}
+
+#resumoValor{
+
+    color:#df94ff;
+
+    font-size:20px;
+}
+
+
+/* ==============================
+   PIX
+============================== */
+
+.pix{
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:
+    1px solid
+    rgba(216,141,255,.3);
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(119,0,170,.18),
+        rgba(255,255,255,.03)
+    );
+}
+
+.pix h3{
+
+    font-size:20px;
+
+    margin-bottom:10px;
+}
+
+.pix p{
+
+    color:#b9a7c1;
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+.pix-key{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:
+    rgba(0,0,0,.35);
+
+    color:#e4b1ff;
+
+    font-family:Arial,sans-serif;
+
+    font-size:13px;
+
+    word-break:break-all;
+}
+
+.copy{
+
+    flex-shrink:0;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:9px 13px;
+
+    border-radius:9px;
+
+    color:white;
+
+    background:#7e00b5;
+
+    font-size:11px;
+}
+
+
+/* ==============================
+   BOTÃO
+============================== */
+
+.submit{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #68009b,
+        #ad27e5,
+        #68009b
+    );
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    box-shadow:
+    0 0 25px
+    rgba(180,0,255,.3);
+
+    transition:.3s;
+}
+
+.submit:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 0 45px
+    rgba(198,60,255,.6);
+}
+
+
+/* ==============================
+   RESULTADO
+============================== */
+
+.success{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    border:
+    1px solid
+    rgba(220,145,255,.4);
+
+    background:
+    rgba(110,0,160,.16);
+}
+
+.success.show{
+    display:block;
+}
+
+.success .magic{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+}
+
+.success h2{
+
+    margin-bottom:12px;
+
+    text-shadow:
+    0 0 20px #b500ff;
+}
+
+.success p{
+
+    color:#c0adca;
+
+    line-height:1.8;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer{
+
+    position:relative;
+
+    z-index:5;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#74677d;
+
+    border-top:
+    1px solid
+    rgba(208,130,255,.15);
+}
+
+footer strong{
+    color:#c76fff;
+}
+
+
+/* ==============================
+   CELULAR
+============================== */
+
+@media(max-width:600px){
+
+    .moon{
+
+        width:110px;
+        height:110px;
+
+        right:-20px;
+
+        opacity:.45;
+    }
+
+    .moon:after{
+
+        width:110px;
+        height:110px;
+
+        left:35px;
+    }
+
+    .box{
+
+        padding:25px 18px;
+    }
+
+    .title h1{
+
+        font-size:45px;
+    }
+
+    .symbol{
+
+        opacity:.08;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- UNIVERSO -->
+
+<div class="universe">
+
+    <div class="moon"></div>
+
+    <div class="symbol one">☾</div>
+
+    <div class="symbol two">✡</div>
+
+    <div class="symbol three">☸</div>
+
+    <div class="symbol four">☯</div>
+
+
+    <span class="star"
+    style="left:5%;top:12%;"></span>
+
+    <span class="star"
+    style="left:16%;top:30%;animation-delay:.5s"></span>
+
+    <span class="star"
+    style="left:30%;top:10%;animation-delay:1s"></span>
+
+    <span class="star"
+    style="left:42%;top:25%;animation-delay:1.5s"></span>
+
+    <span class="star"
+    style="left:55%;top:8%;animation-delay:.3s"></span>
+
+    <span class="star"
+    style="left:69%;top:31%;animation-delay:1.2s"></span>
+
+    <span class="star"
+    style="left:84%;top:14%;animation-delay:.7s"></span>
+
+    <span class="star"
+    style="left:94%;top:45%;animation-delay:1.7s"></span>
+
+    <span class="star"
+    style="left:12%;top:70%;animation-delay:.9s"></span>
+
+    <span class="star"
+    style="left:35%;top:60%;animation-delay:1.3s"></span>
+
+    <span class="star"
+    style="left:55%;top:80%;animation-delay:.4s"></span>
+
+    <span class="star"
+    style="left:78%;top:65%;animation-delay:1.6s"></span>
+
+</div>
+
+
+
+<!-- MENU -->
+
+<header>
+
+<nav>
+
+<a
+href="index.html"
+class="logo"
+>
+ANGEL <span>WITCH</span>
+</a>
+
+<a
+href="catalogo.html"
+class="back"
+>
+← VOLTAR AO CATÁLOGO
+</a>
+
+</nav>
+
+</header>
+
+
+
+<!-- CONTEÚDO -->
+
+<main class="container">
+
+
+<section class="title">
+
+<small>
+✦ SUA EXPERIÊNCIA COMEÇA AQUI ✦
+</small>
+
+<h1>
+MINHA CONSULTA
+</h1>
+
+<p>
+
+Escolha sua tiragem, conte um pouco sobre você
+e prepare sua pergunta. Depois, siga para o
+WhatsApp para continuar seu atendimento.
+
+</p>
+
+</section>
+
+
+
+<section class="box">
+
+
+<!-- CONSULTA -->
+
+<label class="label">
+🔮 ESCOLHA SUA CONSULTA
+</label>
+
+
+<div class="consultas">
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="1 Pergunta"
+data-price="7"
+>
+
+<h3>
+🃏 1 Pergunta
+</h3>
+
+<p>
+Uma pergunta específica para uma leitura objetiva.
+</p>
+
+<strong>
+R$ 7,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="3 Perguntas"
+data-price="15"
+>
+
+<h3>
+✨ 3 Perguntas
+</h3>
+
+<p>
+Até três perguntas em uma única experiência.
+</p>
+
+<strong>
+R$ 15,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="Palácio do Amor"
+data-price="77"
+>
+
+<h3>
+🏰 Palácio do Amor
+</h3>
+
+<p>
+Uma experiência profunda voltada ao campo amoroso.
+</p>
+
+<strong>
+R$ 77,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="Mercúrio do Amor"
+data-price="77"
+>
+
+<h3>
+☿ Mercúrio do Amor
+</h3>
+
+<p>
+Pensamentos, comunicação e intenções no amor.
+</p>
+
+<strong>
+R$ 77,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="Tiragem do Amor"
+data-price="77"
+>
+
+<h3>
+💜 Tiragem do Amor
+</h3>
+
+<p>
+Leitura especial de 7 cartas sobre o amor em geral.
+</p>
+
+<strong>
+R$ 77,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="Oráculo Místico"
+data-price="50"
+>
+
+<h3>
+🔮 Oráculo Místico
+</h3>
+
+<p>
+Mensagem e orientação simbólica para seu momento.
+</p>
+
+<strong>
+R$ 50,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="Vida Passada"
+data-price="210"
+>
+
+<h3>
+🌙 Vida Passada
+</h3>
+
+<p>
+Uma leitura simbólica sobre padrões e arquétipos.
+</p>
+
+<strong>
+R$ 210,00
+</strong>
+
+</label>
+
+
+
+<label class="consulta">
+
+<input
+type="radio"
+name="consulta"
+value="Caminhada ao Sucesso"
+data-price="50"
+>
+
+<h3>
+👑 Caminhada ao Sucesso
+</h3>
+
+<p>
+Caminhos, desafios e possibilidades de crescimento.
+</p>
+
+<strong>
+R$ 50,00
+</strong>
+
+</label>
+
+</div>
+
+
+
+<!-- NOME -->
+
+<label class="label">
+👤 SEU NOME
+</label>
+
+<input
+id="nome"
+class="field"
+type="text"
+placeholder="Como você gostaria de ser chamada(o)?"
+>
+
+
+
+<!-- SIGNO -->
+
+<label class="label">
+♈ SEU SIGNO
+</label>
+
+<select
+id="signo"
+class="field"
+>
+
+<option value="">
+Escolha seu signo
+</option>
+
+<option>Áries</option>
+<option>Touro</option>
+<option>Gêmeos</option>
+<option>Câncer</option>
+<option>Leão</option>
+<option>Virgem</option>
+<option>Libra</option>
+<option>Escorpião</option>
+<option>Sagitário</option>
+<option>Capricórnio</option>
+<option>Aquário</option>
+<option>Peixes</option>
+
+</select>
+
+
+
+<!-- PERGUNTA -->
+
+<label class="label">
+🔮 SUA PERGUNTA
+</label>
+
+<textarea
+id="pergunta"
+class="field"
+placeholder="Escreva sua pergunta ou conte o que deseja saber..."
+></textarea>
+
+
+
+<!-- RESUMO -->
+
+<div class="resumo">
+
+<div class="resumo-title">
+✦ RESUMO DA SUA EXPERIÊNCIA
+</div>
+
+<div id="resumoConsulta">
+Escolha uma consulta
+</div>
+
+<div id="resumoValor">
+—
+</div>
+
+</div>
+
+
+
+<!-- PIX -->
+
+<div class="pix">
+
+<h3>
+💜 Pagamento via Pix
+</h3>
+
+<p>
+
+Após preencher seus dados, utilize a chave Pix
+abaixo para realizar o pagamento da sua consulta.
+
+</p>
+
+<div class="pix-key">
+
+<span id="pix">
+Maiamisqui@gmail.com
+</span>
+
+<button
+class="copy"
+onclick="copiarPix()"
+>
+COPIAR
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- BOTÃO -->
+
+<button
+class="submit"
+onclick="finalizarConsulta()"
+>
+
+✦ IR PARA MINHA CONSULTA ✦
+
+</button>
+
+
+
+<!-- SUCESSO -->
+
+<div
+id="success"
+class="success"
+>
+
+<div class="magic">
+🌙✨🔮
+</div>
+
+<h2>
+Seu pedido foi registrado ✦
+</h2>
+
+<p id="successText">
+
+Sua experiência na Angel WITCH está pronta.
+
+</p>
+
+<p style="margin-top:15px;">
+
+Agora você será direcionada(o) para o
+WhatsApp para continuar seu atendimento.
+
+</p>
+
+</div>
+
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+<p>
+✦ <strong>ANGEL WITCH</strong> ✦
+</p>
+
+<p style="margin-top:8px;">
+Através das cartas, há possibilidades.
+</p>
+
+</footer>
+
+
+
+<script>
+
+/* ==============================
+   SELEÇÃO DA CONSULTA
+============================== */
+
+const cards =
+document.querySelectorAll(".consulta");
+
+const radios =
+document.querySelectorAll(
+'input[name="consulta"]'
+);
+
+const resumoConsulta =
+document.getElementById("resumoConsulta");
+
+const resumoValor =
+document.getElementById("resumoValor");
+
+
+radios.forEach(radio => {
+
+    radio.addEventListener("change", () => {
+
+        cards.forEach(card => {
+
+            card.classList.remove(
+                "selected"
+            );
+
+        });
+
+        radio
+        .closest(".consulta")
+        .classList.add("selected");
+
+
+        resumoConsulta.textContent =
+        radio.value;
+
+        resumoValor.textContent =
+        "R$ " +
+        Number(
+            radio.dataset.price
+        )
+        .toFixed(2)
+        .replace(".", ",");
+
+    });
+
+});
+
+
+/* ==============================
+   COPIAR PIX
+============================== */
+
+function copiarPix(){
+
+    const pix =
+    document.getElementById("pix")
+    .textContent;
+
+    navigator.clipboard
+    .writeText(pix);
+
+    alert(
+        "✨ Chave Pix copiada!"
+    );
+
+}
+
+
+/* ==============================
+   FINALIZAR
+============================== */
+
+function finalizarConsulta(){
+
+    const nome =
+    document
+    .getElementById("nome")
+    .value
+    .trim();
+
+    const signo =
+    document
+    .getElementById("signo")
+    .value;
+
+    const pergunta =
+    document
+    .getElementById("pergunta")
+    .value
+    .trim();
+
+    const consulta =
+    document.querySelector(
+        'input[name="consulta"]:checked'
+    );
+
+
+    if(!consulta){
+
+        alert(
+            "🔮 Escolha sua consulta primeiro."
+        );
+
+        return;
+    }
+
+
+    if(!nome){
+
+        alert(
+            "✨ Digite seu nome."
+        );
+
+        return;
+    }
+
+
+    if(!signo){
+
+        alert(
+            "🌙 Escolha seu signo."
+        );
+
+        return;
+    }
+
+
+    const valor =
+    Number(
+        consulta.dataset.price
+    )
+    .toFixed(2)
+    .replace(".", ",");
+
+
+    document
+    .getElementById("success")
+    .classList
+    .add("show");
+
+
+    document
+    .getElementById("successText")
+    .textContent =
+
+    `${nome}, sua consulta "${consulta.value}" no valor de R$ ${valor} foi preparada. ✦`;
+
+
+    /*
+       IMPORTANTE:
+
+       COLOQUE AQUI O NÚMERO
+       DO SEU WHATSAPP.
+
+       Formato:
+       5511999999999
+
+       Sem +, espaços ou parênteses.
+    */
+
+    const whatsapp =
+    "COLOQUE_SEU_NUMERO_AQUI";
+
+
+    const mensagem =
+
+`🔮 ANGEL WITCH — MINHA CONSULTA ✦
+
+Nome: ${nome}
+Signo: ${signo}
+Consulta: ${consulta.value}
+Valor: R$ ${valor}
+
+Pergunta:
+${pergunta || "Não informada"}
+
+Pagamento:
+Pix — Maiamisqui@gmail.com`;
+
+
+    /*
+       Se você colocar seu número,
+       o WhatsApp abrirá automaticamente.
+    */
+
+    if(
+        whatsapp !==
+        "COLOQUE_SEU_NUMERO_AQUI"
+    ){
+
+        const url =
+        "https://wa.me/" +
+        whatsapp +
+        "?text=" +
+        encodeURIComponent(
+            mensagem
+        );
+
+        setTimeout(() => {
+
+            window.location.href =
+            url;
+
+        },1200);
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
