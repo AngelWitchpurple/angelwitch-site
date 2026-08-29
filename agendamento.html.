@@ -1,66 +1,22 @@
+📅 3. O AGENDAMENTO é o que mais está faltando
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agendamento | Angel WITCH</title>
-<link rel="stylesheet" href="style.css">
-</head>
+Essa seria minha prioridade nº 1.
 
-<body>
+A pessoa clica:
 
-<div class="universe"></div>
+AGENDAR CONSULTA
 
-<header>
+→ escolhe a tiragem
+→ coloca o nome
+→ coloca o signo
+→ escolhe a data no calendário
+→ escolhe o horário disponível
+→ escreve a pergunta, se a consulta permitir
+→ vê o valor
+→ recebe as instruções para pagamento
 
-<a href="index.html" class="logo">
-☾ ANGEL WITCH
-</a>
+E no final:
 
-</header>
+“Seu pedido de consulta foi registrado ✦”
 
-<section class="booking-page">
-
-<h1>Agende sua consulta</h1>
-
-<p>
-Escolha o melhor dia e horário.
-</p>
-
-<div class="calendar-box">
-
-<label>Escolha a data</label>
-
-<input id="dataConsulta" type="date">
-
-<label>Escolha o horário</label>
-
-<select id="horaConsulta">
-
-<option>18:20</option>
-<option>18:40</option>
-<option>19:00</option>
-<option>19:20</option>
-<option>19:40</option>
-<option>20:00</option>
-<option>20:20</option>
-
-</select>
-
-<button onclick="marcarConsulta()">
-
-Confirmar Agendamento
-
-</button>
-
-</div>
-
-<div id="confirmacao"></div>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+Isso muda completamente a sensação do site.
