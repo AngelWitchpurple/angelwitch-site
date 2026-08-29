@@ -1,1 +1,64 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de Clientes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="universe"></div>
+
+<header>
+
+<a class="logo" href="index.html">
+☾ ANGEL WITCH
+</a>
+
+</header>
+
+<section class="clientes">
+
+<h1>Painel de Clientes</h1>
+
+<input id="nome" placeholder="Nome">
+
+<input id="signo" placeholder="Signo">
+
+<input id="nascimento" type="date">
+
+<select id="consulta">
+
+<option>1 Pergunta</option>
+
+<option>3 Perguntas</option>
+
+<option>Palácio do Amor</option>
+
+<option>Mercúrio do Amor</option>
+
+<option>Energia do Mês</option>
+
+<option>Caminhada ao Sucesso</option>
+
+<option>Vida Passada</option>
+
+</select>
+
+<button onclick="salvarCliente()">
+Salvar Cliente
+</button>
+
+<h2>Histórico</h2>
+
+<div id="listaClientes"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
