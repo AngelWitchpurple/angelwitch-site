@@ -1,15 +1,13 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Angel WITCH | Agendamento</title>
 
-<meta name="description"
-content="Agende sua consulta na Angel WITCH. Escolha sua leitura e envie seus dados pelo WhatsApp.">
+<meta name="description" content="Agende sua consulta na Angel WITCH. Escolha sua leitura e envie seus dados pelo WhatsApp.">
 
 <style>
 *{
@@ -26,16 +24,13 @@ body{
     min-height:100vh;
     font-family:Georgia,"Times New Roman",serif;
     color:#fff;
-    overflow-x:hidden;
-
     background:
-    radial-gradient(circle at 50% 0%,#650083 0%,transparent 35%),
-    radial-gradient(circle at 10% 80%,#300052 0%,transparent 30%),
-    radial-gradient(circle at 90% 60%,#4b006d 0%,transparent 30%),
-    #050008;
+        radial-gradient(circle at 50% 0%,#650083 0%,transparent 35%),
+        radial-gradient(circle at 10% 80%,#300052 0%,transparent 30%),
+        radial-gradient(circle at 90% 60%,#4b006d 0%,transparent 30%),
+        #050008;
+    overflow-x:hidden;
 }
-
-/* UNIVERSO */
 
 .universe{
     position:fixed;
@@ -52,21 +47,17 @@ body{
     right:6%;
     top:80px;
     border-radius:50%;
-
-    background:
-    radial-gradient(
+    background:radial-gradient(
         circle at 35% 30%,
         #fff,
         #ead2ff 35%,
         #ad55e8 65%,
         #570078
     );
-
     box-shadow:
-    0 0 30px #fff,
-    0 0 70px #d16aff,
-    0 0 150px #8c00d4;
-
+        0 0 30px #fff,
+        0 0 70px #d16aff,
+        0 0 150px #8c00d4;
     animation:moonPulse 5s ease-in-out infinite;
 }
 
@@ -82,13 +73,8 @@ body{
 }
 
 @keyframes moonPulse{
-    0%,100%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.08);
-    }
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.08)}
 }
 
 .star{
@@ -97,11 +83,9 @@ body{
     height:4px;
     border-radius:50%;
     background:#fff;
-
     box-shadow:
-    0 0 8px #fff,
-    0 0 22px #d06cff;
-
+        0 0 8px #fff,
+        0 0 22px #d06cff;
     animation:twinkle 2s ease-in-out infinite;
 }
 
@@ -126,11 +110,9 @@ body{
     position:absolute;
     font-size:70px;
     color:rgba(221,150,255,.18);
-
     text-shadow:
-    0 0 20px #a400ff,
-    0 0 50px #7200a8;
-
+        0 0 20px #a400ff,
+        0 0 50px #7200a8;
     animation:float 8s ease-in-out infinite;
 }
 
@@ -163,15 +145,11 @@ body{
     }
 }
 
-/* HEADER */
-
 header{
     position:relative;
     z-index:10;
     padding:22px 7%;
-
     border-bottom:1px solid rgba(220,140,255,.18);
-
     background:rgba(5,0,12,.72);
     backdrop-filter:blur(15px);
 }
@@ -179,7 +157,6 @@ header{
 nav{
     max-width:1100px;
     margin:auto;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -188,14 +165,12 @@ nav{
 .logo{
     color:#fff;
     text-decoration:none;
-
     font-size:25px;
     font-weight:bold;
     letter-spacing:5px;
-
     text-shadow:
-    0 0 15px #fff,
-    0 0 35px #a900ff;
+        0 0 15px #fff,
+        0 0 35px #a900ff;
 }
 
 .logo span{
@@ -205,26 +180,19 @@ nav{
 .back{
     color:#d4b6df;
     text-decoration:none;
-
     font-size:12px;
     letter-spacing:2px;
-
-    transition:.3s;
 }
 
 .back:hover{
     color:#e69cff;
 }
 
-/* CONTEÚDO */
-
 .container{
     position:relative;
     z-index:5;
-
     width:min(900px,92%);
     margin:auto;
-
     padding:85px 0 100px;
 }
 
@@ -241,90 +209,42 @@ nav{
 
 .title h1{
     margin-top:15px;
-
     font-size:clamp(45px,8vw,78px);
     letter-spacing:6px;
-
     text-shadow:
-    0 0 15px #fff,
-    0 0 35px #c04dff,
-    0 0 80px #7900b5;
+        0 0 15px #fff,
+        0 0 35px #c04dff,
+        0 0 80px #7900b5;
 }
 
 .title p{
     max-width:620px;
     margin:20px auto 0;
-
     color:#c9b6d1;
     line-height:1.8;
 }
 
-/* CAIXA */
-
 .box{
     padding:40px;
-
     border-radius:28px;
-
     border:1px solid rgba(213,140,255,.4);
-
-    background:
-    linear-gradient(
+    background:linear-gradient(
         145deg,
         rgba(59,4,76,.85),
         rgba(8,0,14,.96)
     );
-
     box-shadow:
-    0 0 60px rgba(135,0,200,.25),
-    inset 0 0 40px rgba(190,70,255,.03);
+        0 0 60px rgba(135,0,200,.25),
+        inset 0 0 40px rgba(190,70,255,.03);
 }
 
 .label{
     display:block;
     margin-bottom:10px;
-
     color:#e8cff2;
     font-size:13px;
     letter-spacing:1px;
 }
-
-.field{
-    width:100%;
-
-    padding:15px 16px;
-    margin-bottom:25px;
-
-    border-radius:12px;
-    border:1px solid rgba(211,134,255,.3);
-
-    outline:none;
-
-    color:#fff;
-    background:rgba(255,255,255,.055);
-
-    font-family:inherit;
-    font-size:14px;
-}
-
-.field:focus{
-    border-color:#d078ff;
-
-    box-shadow:
-    0 0 20px rgba(188,0,255,.25);
-}
-
-.field option{
-    color:#111;
-    background:#fff;
-}
-
-textarea.field{
-    min-height:120px;
-    resize:vertical;
-}
-
-/* CONSULTAS */
 
 .consultas{
     display:grid;
@@ -335,24 +255,17 @@ textarea.field{
 
 .consulta{
     cursor:pointer;
-
     padding:20px;
-
     border-radius:18px;
     border:1px solid rgba(211,135,255,.25);
-
     background:rgba(255,255,255,.035);
-
     transition:.35s;
 }
 
 .consulta:hover{
     transform:translateY(-5px);
-
     border-color:#d180ff;
-
-    box-shadow:
-    0 0 25px rgba(178,0,255,.3);
+    box-shadow:0 0 25px rgba(178,0,255,.3);
 }
 
 .consulta input{
@@ -361,11 +274,8 @@ textarea.field{
 
 .consulta.selected{
     border-color:#df9cff;
-
     background:rgba(168,0,255,.18);
-
-    box-shadow:
-    0 0 30px rgba(170,0,255,.3);
+    box-shadow:0 0 30px rgba(170,0,255,.3);
 }
 
 .consulta h3{
@@ -382,23 +292,43 @@ textarea.field{
 .consulta strong{
     display:block;
     margin-top:10px;
-
     color:#e3a1ff;
     font-size:19px;
-
-    text-shadow:0 0 12px #a900ff;
 }
 
-/* RESUMO */
+.field{
+    width:100%;
+    padding:15px 16px;
+    margin-bottom:25px;
+    border-radius:12px;
+    border:1px solid rgba(211,134,255,.3);
+    outline:none;
+    color:#fff;
+    background:rgba(255,255,255,.055);
+    font-family:inherit;
+    font-size:14px;
+}
+
+.field:focus{
+    border-color:#d078ff;
+    box-shadow:0 0 20px rgba(188,0,255,.25);
+}
+
+.field option{
+    color:#111;
+    background:#fff;
+}
+
+textarea.field{
+    min-height:120px;
+    resize:vertical;
+}
 
 .resumo{
     margin-top:30px;
     padding:25px;
-
     border-radius:20px;
-
     background:rgba(132,0,190,.12);
-
     border:1px solid rgba(207,123,255,.25);
 }
 
@@ -419,18 +349,12 @@ textarea.field{
     font-size:20px;
 }
 
-/* PIX */
-
 .pix{
     margin-top:25px;
     padding:25px;
-
     border-radius:20px;
-
     border:1px solid rgba(216,141,255,.3);
-
-    background:
-    linear-gradient(
+    background:linear-gradient(
         135deg,
         rgba(119,0,170,.2),
         rgba(255,255,255,.03)
@@ -453,98 +377,62 @@ textarea.field{
     align-items:center;
     justify-content:space-between;
     gap:10px;
-
     margin-top:15px;
     padding:15px;
-
     border-radius:12px;
-
     background:rgba(0,0,0,.4);
-
     color:#e4b1ff;
-
     font-family:Arial,sans-serif;
     font-size:13px;
-
     word-break:break-all;
 }
 
 .copy{
-    flex-shrink:0;
-
     border:none;
     cursor:pointer;
-
     padding:9px 13px;
-
     border-radius:9px;
-
     color:#fff;
     background:#7e00b5;
-
     font-size:11px;
-
-    transition:.3s;
 }
 
 .copy:hover{
     background:#a900ed;
 }
 
-/* BOTÃO */
-
 .submit{
     width:100%;
-
     margin-top:30px;
     padding:18px;
-
     border:none;
     border-radius:50px;
-
     cursor:pointer;
-
     color:#fff;
-
-    background:
-    linear-gradient(
+    background:linear-gradient(
         90deg,
         #68009b,
         #b42bea,
         #68009b
     );
-
     font-family:inherit;
     font-size:14px;
     letter-spacing:3px;
-
-    box-shadow:
-    0 0 25px rgba(180,0,255,.35);
-
-    transition:.35s;
+    box-shadow:0 0 25px rgba(180,0,255,.35);
 }
 
 .submit:hover{
     transform:translateY(-3px);
-
-    box-shadow:
-    0 0 45px rgba(198,60,255,.65);
+    box-shadow:0 0 45px rgba(198,60,255,.65);
 }
-
-/* SUCESSO */
 
 .success{
     display:none;
-
     margin-top:30px;
     padding:30px;
-
     text-align:center;
-
     border-radius:20px;
-
     border:1px solid rgba(220,145,255,.45);
-
     background:rgba(110,0,160,.18);
 }
 
@@ -572,9 +460,6 @@ textarea.field{
 
 .success h2{
     margin-bottom:12px;
-
-    text-shadow:
-    0 0 20px #b500ff;
 }
 
 .success p{
@@ -582,26 +467,18 @@ textarea.field{
     line-height:1.8;
 }
 
-/* FOOTER */
-
 footer{
     position:relative;
     z-index:5;
-
     padding:40px;
-
     text-align:center;
-
     color:#80718a;
-
     border-top:1px solid rgba(208,130,255,.15);
 }
 
 footer strong{
     color:#c76fff;
 }
-
-/* CELULAR */
 
 @media(max-width:600px){
 
@@ -667,21 +544,16 @@ footer strong{
     <span class="star big" style="left:84%;top:14%;animation-delay:.7s"></span>
     <span class="star" style="left:94%;top:45%;animation-delay:1.7s"></span>
 
-    <span class="star" style="left:12%;top:70%;animation-delay:.9s"></span>
-    <span class="star big" style="left:35%;top:60%;animation-delay:1.3s"></span>
-    <span class="star" style="left:55%;top:80%;animation-delay:.4s"></span>
-    <span class="star big" style="left:78%;top:65%;animation-delay:1.6s"></span>
-
 </div>
 
 <header>
 <nav>
 
-<a href="index.html" class="logo">
+<a href="./index.html" class="logo">
 ANGEL <span>WITCH</span>
 </a>
 
-<a href="catalogo.html" class="back">
+<a href="./catalogo.html" class="back">
 ← VOLTAR AO CATÁLOGO
 </a>
 
@@ -706,9 +578,7 @@ WhatsApp para continuar seu atendimento.
 
 <section class="box">
 
-<label class="label">
-🔮 ESCOLHA SUA CONSULTA
-</label>
+<label class="label">🔮 ESCOLHA SUA CONSULTA</label>
 
 <div class="consultas">
 
@@ -897,6 +767,7 @@ const resumoConsulta =
 const resumoValor =
     document.getElementById("resumoValor");
 
+
 radios.forEach(function(radio){
 
     radio.addEventListener("change",function(){
@@ -909,8 +780,7 @@ radios.forEach(function(radio){
             .closest(".consulta")
             .classList.add("selected");
 
-        resumoConsulta.textContent =
-            radio.value;
+        resumoConsulta.textContent = radio.value;
 
         resumoValor.textContent =
             "R$ " +
@@ -931,7 +801,10 @@ function copiarPix(){
         .textContent
         .trim();
 
-    if(navigator.clipboard){
+    if(
+        navigator.clipboard &&
+        window.isSecureContext
+    ){
 
         navigator.clipboard
             .writeText(pix)
@@ -1035,8 +908,12 @@ function finalizarConsulta(){
         " foi preparada. ✦";
 
 
-    const whatsapp =
-        "5534991335673";
+    /*
+      SEU WHATSAPP
+      Número: 34 99133-5673
+    */
+
+    const whatsapp = "5534991335673";
 
 
     const mensagem =
