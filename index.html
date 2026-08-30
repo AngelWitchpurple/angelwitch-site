@@ -3,18 +3,17 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="google-site-verification"
           content="sBb-V7R0NaAjuyn2236MjFo7cRqB32IejXcC_DadOzo">
 
-    <title>Angel WITCH | Tarô, Oráculos e Consultas</title>
-
     <meta name="description"
-          content="Angel WITCH — através das cartas, há possibilidades. Conheça nossas consultas, o universo do Tarô e os diferentes oráculos.">
+          content="Angel WITCH — através das cartas, há possibilidades. Conheça nossas tiragens, oráculos e o universo das cartas.">
 
-    <meta name="theme-color" content="#090014">
+    <meta name="theme-color" content="#07000f">
+
+    <title>Angel WITCH | Através das cartas, há possibilidades</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,51 +21,70 @@
 <body>
 
 <!-- =====================================================
-     UNIVERSO MÍSTICO
+     CAMADA MÁGICA DO UNIVERSO
 ===================================================== -->
 
-<div class="universe">
+<div id="magic-background">
 
-    <div class="nebula nebula-one"></div>
-    <div class="nebula nebula-two"></div>
-    <div class="nebula nebula-three"></div>
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
 
-    <!-- ESTRELAS -->
-    <div class="stars">
-
-        <span class="star s1"></span>
-        <span class="star s2"></span>
-        <span class="star s3"></span>
-        <span class="star s4"></span>
-        <span class="star s5"></span>
-        <span class="star s6"></span>
-        <span class="star s7"></span>
-        <span class="star s8"></span>
-        <span class="star s9"></span>
-        <span class="star s10"></span>
-
-        <span class="star big s11"></span>
-        <span class="star big s12"></span>
-        <span class="star big s13"></span>
-        <span class="star big s14"></span>
-
+    <div class="moon">
+        <div class="moon-crater crater-1"></div>
+        <div class="moon-crater crater-2"></div>
+        <div class="moon-crater crater-3"></div>
     </div>
 
-    <!-- ENERGIAS -->
-    <span class="energy e1"></span>
-    <span class="energy e2"></span>
-    <span class="energy e3"></span>
-    <span class="energy e4"></span>
-    <span class="energy e5"></span>
-    <span class="energy e6"></span>
+    <div class="moon-glow"></div>
 
-    <!-- SÍMBOLOS MÍSTICOS -->
-    <div class="mystic-symbol symbol-one">☾</div>
-    <div class="mystic-symbol symbol-two">✦</div>
-    <div class="mystic-symbol symbol-three">☽</div>
+    <div class="stars"></div>
+    <div class="energy-particles"></div>
 
-    <!-- LUA -->
-    <div class="moon"></div>
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+
+    <div class="magic-symbol symbol-1">☾</div>
+    <div class="magic-symbol symbol-2">✦</div>
+    <div class="magic-symbol symbol-3">✧</div>
+    <div class="magic-symbol symbol-4">☽</div>
+
+</div>
+
+
+<!-- =====================================================
+     CARTAS FLUTUANTES
+===================================================== -->
+
+<div class="floating-cards">
+
+    <div class="tarot-card tarot-card-1">
+        <div class="card-inner">
+            <span>✦</span>
+            <small>ANGEL</small>
+        </div>
+    </div>
+
+    <div class="tarot-card tarot-card-2">
+        <div class="card-inner">
+            <span>☾</span>
+            <small>WITCH</small>
+        </div>
+    </div>
+
+    <div class="tarot-card tarot-card-3">
+        <div class="card-inner">
+            <span>✧</span>
+            <small>ORÁCULO</small>
+        </div>
+    </div>
+
+    <div class="tarot-card tarot-card-4">
+        <div class="card-inner">
+            <span>◇</span>
+            <small>MISTÉRIO</small>
+        </div>
+    </div>
 
 </div>
 
@@ -75,47 +93,39 @@
      MENU
 ===================================================== -->
 
-<header>
+<header class="site-header">
 
-    <nav class="navbar">
+    <nav class="navigation">
 
-        <a href="index.html" class="logo">
-            ANGEL <span>WITCH</span>
+        <a href="index.html" class="brand">
+            <span class="brand-small">✦</span>
+            ANGEL
+            <strong>WITCH</strong>
         </a>
 
-        <ul class="menu">
+        <div class="nav-links">
 
-            <li>
-                <a href="index.html">
-                    ✦ Início
-                </a>
-            </li>
+            <a href="index.html" class="active">
+                Início
+            </a>
 
-            <li>
-                <a href="catalogo.html">
-                    🔮 Catálogo
-                </a>
-            </li>
+            <a href="catalogo.html">
+                Catálogo
+            </a>
 
-            <li>
-                <a href="universo.html">
-                    🌙 Universo das Cartas
-                </a>
-            </li>
+            <a href="universo.html">
+                Universo das Cartas
+            </a>
 
-            <li>
-                <a href="agendamento.html">
-                    💜 Minha Consulta
-                </a>
-            </li>
+            <a href="agendamento.html">
+                Minha Consulta
+            </a>
 
-            <li>
-                <a href="clientes.html">
-                    ✦ Área de Clientes
-                </a>
-            </li>
+        </div>
 
-        </ul>
+        <a href="agendamento.html" class="nav-button">
+            CONSULTAR
+        </a>
 
     </nav>
 
@@ -130,59 +140,55 @@
 
 <section class="hero">
 
-    <!-- CARTAS FLUTUANTES -->
-
-    <div class="floating-card card-one">
-        ✦
-    </div>
-
-    <div class="floating-card card-two">
-        ☾
-    </div>
-
-    <div class="floating-card card-three">
-        ✧
-    </div>
-
-    <div class="floating-card card-four">
-        ♢
-    </div>
-
-
     <div class="hero-content">
 
-        <div class="eyebrow">
-            ✦ UM PORTAL ENTRE VOCÊ E AS CARTAS ✦
+        <div class="hero-symbol">
+            ✦
         </div>
 
+        <p class="hero-label">
+            UM PORTAL ENTRE VOCÊ E AS CARTAS
+        </p>
+
         <h1>
-            ANGEL<br>
+            ANGEL
             <span>WITCH</span>
         </h1>
 
+        <div class="title-line">
+            <span></span>
+            ✦
+            <span></span>
+        </div>
+
         <h2>
-            Através das cartas, há possibilidades.
+            Através das cartas,<br>
+            <em>há possibilidades.</em>
         </h2>
 
-        <p>
-            Entre em um universo de símbolos, mistérios,
-            intuição e possibilidades. Escolha sua experiência,
-            conheça os diferentes sistemas de cartas e descubra
-            qual consulta combina com você.
+        <p class="hero-description">
+            Entre em um universo de símbolos, histórias,
+            intuição e possibilidades. Escolha sua experiência
+            e descubra qual caminho deseja explorar.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
 
-            <a href="agendamento.html"
-               class="btn btn-primary">
-                ✦ VAMOS PARA MINHA CONSULTA
+            <a href="agendamento.html" class="magic-button primary">
+                <span>✦</span>
+                VAMOS PARA MINHA CONSULTA
             </a>
 
-            <a href="catalogo.html"
-               class="btn btn-secondary">
-                🔮 VER CATÁLOGO
+            <a href="catalogo.html" class="magic-button secondary">
+                EXPLORAR O CATÁLOGO
+                <span>→</span>
             </a>
 
+        </div>
+
+        <div class="scroll-hint">
+            <span>↓</span>
+            DESÇA PARA ENTRAR NO UNIVERSO
         </div>
 
     </div>
@@ -191,136 +197,153 @@
 
 
 <!-- =====================================================
-     CONSULTAS
+     PORTAL DE CONSULTAS
 ===================================================== -->
 
-<section class="section" id="consultas">
+<section class="portal-section">
 
-    <div class="section-title">
+    <div class="section-heading">
 
-        <small>
-            ✦ ESCOLHA SUA EXPERIÊNCIA ✦
-        </small>
+        <span>✦ ESCOLHA SEU CAMINHO ✦</span>
 
         <h2>
-            Consultas Angel WITCH
+            Onde sua curiosidade
+            <em>quer te levar?</em>
         </h2>
 
         <p>
-            Cada tiragem possui uma proposta diferente.
-            Escolha aquela que mais combina com aquilo
-            que você deseja explorar através das cartas.
+            Cada leitura possui uma proposta diferente.
+            Conheça as experiências da Angel WITCH.
         </p>
 
     </div>
 
 
-    <div class="services">
+    <div class="portal-grid">
 
 
         <!-- AMOR -->
 
-        <article class="service love">
+        <a href="catalogo.html#amor"
+           class="portal-card portal-love">
 
-            <div class="service-icon">
-                💜
+            <div class="portal-glow"></div>
+
+            <div class="portal-icon">
+                ♡
             </div>
 
-            <div class="premium">
-                ✦ EXPERIÊNCIA ESPECIAL ✦
-            </div>
+            <span class="portal-number">
+                01
+            </span>
 
             <h3>
-                Tiragens do Amor
+                Amor
             </h3>
 
             <p>
-                Uma experiência dedicada ao universo amoroso,
-                sentimentos, conexões, possibilidades e
-                caminhos afetivos.
+                Sentimentos, conexões, caminhos
+                e possibilidades no amor.
             </p>
 
-            <a href="catalogo.html">
-                CONHECER TIRAGENS →
-            </a>
+            <span class="portal-link">
+                ENTRAR NO PORTAL →
+            </span>
 
-        </article>
+        </a>
 
 
         <!-- ORÁCULO -->
 
-        <article class="service oracle">
+        <a href="catalogo.html#oraculo"
+           class="portal-card portal-oracle">
 
-            <div class="service-icon">
+            <div class="portal-glow"></div>
+
+            <div class="portal-icon">
                 🔮
             </div>
 
+            <span class="portal-number">
+                02
+            </span>
+
             <h3>
-                Oráculo Místico
+                Oráculo
             </h3>
 
             <p>
-                Uma leitura intuitiva para explorar caminhos,
-                mensagens simbólicas, escolhas e possibilidades
-                que cercam seu momento atual.
+                Mensagens simbólicas, caminhos,
+                escolhas e possibilidades.
             </p>
 
-            <a href="catalogo.html">
-                CONHECER →
-            </a>
+            <span class="portal-link">
+                ENTRAR NO PORTAL →
+            </span>
 
-        </article>
+        </a>
 
 
         <!-- VIDA PASSADA -->
 
-        <article class="service past">
+        <a href="catalogo.html#vida-passada"
+           class="portal-card portal-past">
 
-            <div class="service-icon">
-                🌙
+            <div class="portal-glow"></div>
+
+            <div class="portal-icon">
+                ☾
             </div>
+
+            <span class="portal-number">
+                03
+            </span>
 
             <h3>
                 Vida Passada
             </h3>
 
             <p>
-                Uma leitura simbólica voltada para padrões,
-                experiências e temas que podem ser explorados
-                através da linguagem das cartas.
+                Uma leitura simbólica para explorar
+                padrões, temas e experiências.
             </p>
 
-            <a href="catalogo.html">
-                CONHECER →
-            </a>
+            <span class="portal-link">
+                ENTRAR NO PORTAL →
+            </span>
 
-        </article>
+        </a>
 
 
         <!-- SUCESSO -->
 
-        <article class="service success">
+        <a href="catalogo.html#sucesso"
+           class="portal-card portal-success">
 
-            <div class="service-icon">
-                ✨
+            <div class="portal-glow"></div>
+
+            <div class="portal-icon">
+                ✧
             </div>
+
+            <span class="portal-number">
+                04
+            </span>
 
             <h3>
                 Caminhada ao Sucesso
             </h3>
 
             <p>
-                Uma tiragem voltada para reflexão sobre
-                caminhos, obstáculos, oportunidades e
-                possibilidades relacionadas aos seus objetivos.
+                Reflexões sobre objetivos, obstáculos,
+                oportunidades e possibilidades.
             </p>
 
-            <a href="catalogo.html">
-                CONHECER →
-            </a>
+            <span class="portal-link">
+                ENTRAR NO PORTAL →
+            </span>
 
-        </article>
-
+        </a>
 
     </div>
 
@@ -331,47 +354,64 @@
      UNIVERSO DAS CARTAS
 ===================================================== -->
 
-<section class="universe-preview">
+<section class="cards-universe">
 
-    <div class="universe-content">
+    <div class="universe-visual">
 
-        <div class="magic-orb">
+        <div class="cosmic-circle">
 
-            <div class="orb-ring ring-one"></div>
-            <div class="orb-ring ring-two"></div>
-            <div class="orb-symbol">
+            <div class="circle-ring ring-a"></div>
+            <div class="circle-ring ring-b"></div>
+            <div class="circle-ring ring-c"></div>
+
+            <div class="circle-center">
                 ☾
             </div>
 
         </div>
 
-
-        <div class="universe-text">
-
-            <small>
-                ✦ ENTRE NO UNIVERSO DAS CARTAS ✦
-            </small>
-
-            <h2>
-                Muito além de um baralho.
-            </h2>
-
-            <p>
-                Tarô, Lenormand e Sibila possuem histórias,
-                estruturas e linguagens diferentes.
-            </p>
-
-            <p>
-                Conheça a origem desses sistemas e descubra
-                qual universo desperta sua curiosidade.
-            </p>
-
-            <a href="universo.html"
-               class="btn btn-primary">
-                🌙 EXPLORAR O UNIVERSO
-            </a>
-
+        <div class="orbit-symbol orbit-symbol-1">
+            ✦
         </div>
+
+        <div class="orbit-symbol orbit-symbol-2">
+            ◇
+        </div>
+
+        <div class="orbit-symbol orbit-symbol-3">
+            ☽
+        </div>
+
+    </div>
+
+
+    <div class="universe-copy">
+
+        <span class="eyebrow">
+            ✦ O UNIVERSO DAS CARTAS
+        </span>
+
+        <h2>
+            Você conhece a história
+            por trás das cartas?
+        </h2>
+
+        <p>
+            Tarô, Baralho Cigano e Sibila não são a mesma coisa.
+            Cada sistema possui sua própria história,
+            estrutura e maneira de interpretar seus símbolos.
+        </p>
+
+        <p>
+            Criamos um espaço para você conhecer esses universos
+            antes de escolher sua experiência.
+        </p>
+
+        <a href="universo.html"
+           class="text-button">
+            DESCOBRIR O UNIVERSO
+            <span>✦</span>
+        </a>
 
     </div>
 
@@ -382,66 +422,30 @@
      EXPERIÊNCIA ANGEL WITCH
 ===================================================== -->
 
-<section class="section experience-section">
+<section class="experience-section">
 
-    <div class="experience">
+    <div class="experience-content">
 
-        <div class="experience-text">
+        <span class="eyebrow">
+            ✦ ANGEL WITCH ✦
+        </span>
 
-            <small>
-                ✦ A EXPERIÊNCIA ANGEL WITCH ✦
-            </small>
+        <h2>
+            Não é apenas uma consulta.
+        </h2>
 
-            <h2>
-                Entre, escolha sua leitura e descubra
-                seu caminho.
-            </h2>
+        <p>
+            É um momento para parar, perguntar,
+            refletir e permitir que as cartas
+            contem uma nova perspectiva.
+        </p>
 
-            <p>
-                A Angel WITCH foi criada para transformar
-                sua consulta em uma experiência especial,
-                desde o primeiro contato até a leitura.
-            </p>
+        <div class="experience-line"></div>
 
-            <ul>
-
-                <li>
-                    ✦ Catálogo de consultas
-                </li>
-
-                <li>
-                    ✦ Diferentes sistemas de cartas
-                </li>
-
-                <li>
-                    ✦ Universo místico e interativo
-                </li>
-
-                <li>
-                    ✦ Consulta personalizada
-                </li>
-
-            </ul>
-
-        </div>
-
-        <div class="experience-symbol">
-
-            <div class="ritual-circle">
-
-                <span>☾</span>
-
-                <span>✦</span>
-
-                <span>☽</span>
-
-                <strong>
-                    AW
-                </strong>
-
-            </div>
-
-        </div>
+        <a href="agendamento.html"
+           class="magic-button primary">
+            🔮 VAMOS PARA MINHA CONSULTA
+        </a>
 
     </div>
 
@@ -449,32 +453,30 @@
 
 
 <!-- =====================================================
-     CTA
+     CTA FINAL
 ===================================================== -->
 
-<section class="cta">
+<section class="final-portal">
 
-    <div class="cta-symbol">
-        ✦
-    </div>
+    <div class="final-stars"></div>
 
-    <small>
-        SUA JORNADA COMEÇA AQUI
-    </small>
+    <span>
+        ✦ SUA JORNADA COMEÇA AQUI ✦
+    </span>
 
     <h2>
-        Qual mensagem as cartas
-        guardam para você?
+        Qual mensagem
+        <em>as cartas guardam?</em>
     </h2>
 
     <p>
-        Escolha sua consulta e venha conhecer
-        o universo Angel WITCH.
+        Entre no universo Angel WITCH.
     </p>
 
     <a href="agendamento.html"
-       class="btn btn-primary">
-        🔮 VAMOS PARA MINHA CONSULTA
+       class="final-button">
+        ABRIR MEU PORTAL
+        <span>✦</span>
     </a>
 
 </section>
@@ -483,12 +485,12 @@
 
 
 <!-- =====================================================
-     FOOTER
+     RODAPÉ
 ===================================================== -->
 
-<footer>
+<footer class="site-footer">
 
-    <div class="footer-logo">
+    <div class="footer-brand">
         ANGEL <span>WITCH</span>
     </div>
 
@@ -496,35 +498,27 @@
         Através das cartas, há possibilidades.
     </p>
 
-    <div class="footer-links">
+    <div class="footer-navigation">
 
-        <a href="index.html">
-            Início
-        </a>
+        <a href="index.html">Início</a>
 
-        <a href="catalogo.html">
-            Catálogo
-        </a>
+        <a href="catalogo.html">Catálogo</a>
 
-        <a href="universo.html">
-            Universo
-        </a>
+        <a href="universo.html">Universo das Cartas</a>
 
-        <a href="agendamento.html">
-            Minha Consulta
-        </a>
+        <a href="agendamento.html">Minha Consulta</a>
 
     </div>
 
-    <p class="copyright">
-        ✦ Angel WITCH ✦
-    </p>
+    <div class="footer-symbol">
+        ✦
+    </div>
 
 </footer>
 
 
 <!-- =====================================================
-     JAVASCRIPT
+     SCRIPT
 ===================================================== -->
 
 <script src="script.js"></script>
