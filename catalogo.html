@@ -4,7 +4,6 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Catálogo Místico | Angel WITCH</title>
@@ -15,10 +14,6 @@
     >
 
     <style>
-
-        /* =====================================================
-           RESET
-        ===================================================== */
 
         * {
             margin: 0;
@@ -33,7 +28,6 @@
         body {
             min-height: 100vh;
             overflow-x: hidden;
-
             color: #ffffff;
 
             font-family:
@@ -50,27 +44,17 @@
                 );
         }
 
-
-        /* =====================================================
-           UNIVERSO
-        ===================================================== */
+        /* UNIVERSO */
 
         .universe {
             position: fixed;
-
             inset: 0;
-
             overflow: hidden;
-
             pointer-events: none;
-
             z-index: 0;
         }
 
-
-        /* =====================================================
-           NEBULOSAS
-        ===================================================== */
+        /* NEBULOSAS */
 
         .nebula {
             position: absolute;
@@ -81,7 +65,6 @@
             border-radius: 50%;
 
             filter: blur(100px);
-
             opacity: .22;
 
             animation:
@@ -91,25 +74,20 @@
         .nebula.one {
             top: -150px;
             left: -100px;
-
             background: #a000ff;
         }
 
         .nebula.two {
             right: -150px;
             top: 35%;
-
             background: #7200ff;
-
             animation-delay: 4s;
         }
 
         .nebula.three {
             left: 35%;
             bottom: -250px;
-
             background: #c000ff;
-
             animation-delay: 8s;
         }
 
@@ -128,10 +106,7 @@
             }
         }
 
-
-        /* =====================================================
-           ESTRELAS
-        ===================================================== */
+        /* ESTRELAS */
 
         .star {
             position: absolute;
@@ -170,10 +145,7 @@
             }
         }
 
-
-        /* =====================================================
-           ENERGIAS FLUTUANTES
-        ===================================================== */
+        /* ENERGIAS */
 
         .energy {
             position: absolute;
@@ -222,10 +194,7 @@
             }
         }
 
-
-        /* =====================================================
-           LUA
-        ===================================================== */
+        /* LUA */
 
         .moon {
             position: absolute;
@@ -287,10 +256,7 @@
             }
         }
 
-
-        /* =====================================================
-           SÍMBOLOS MÍSTICOS
-        ===================================================== */
+        /* SÍMBOLOS */
 
         .magic-symbol {
 
@@ -308,30 +274,22 @@
         }
 
         .symbol-one {
-
             left: 5%;
             top: 25%;
-
             font-size: 100px;
         }
 
         .symbol-two {
-
             right: 4%;
             top: 55%;
-
             font-size: 80px;
-
             animation-delay: 4s;
         }
 
         .symbol-three {
-
             left: 8%;
             bottom: 12%;
-
             font-size: 60px;
-
             animation-delay: 7s;
         }
 
@@ -349,15 +307,11 @@
             }
         }
 
-
-        /* =====================================================
-           CABEÇALHO
-        ===================================================== */
+        /* CABEÇALHO */
 
         header {
 
             position: relative;
-
             z-index: 10;
 
             padding: 25px 6%;
@@ -375,7 +329,6 @@
         nav {
 
             max-width: 1250px;
-
             margin: auto;
 
             display: flex;
@@ -428,15 +381,11 @@
                 0 0 15px #c000ff;
         }
 
-
-        /* =====================================================
-           HERO
-        ===================================================== */
+        /* HERO */
 
         .hero {
 
             position: relative;
-
             z-index: 5;
 
             text-align: center;
@@ -485,15 +434,11 @@
             font-size: 16px;
         }
 
-
-        /* =====================================================
-           CATEGORIAS
-        ===================================================== */
+        /* CATEGORIAS */
 
         .category {
 
             position: relative;
-
             z-index: 5;
 
             max-width: 1200px;
@@ -529,10 +474,7 @@
             font-size: 15px;
         }
 
-
-        /* =====================================================
-           CATÁLOGO
-        ===================================================== */
+        /* CATÁLOGO */
 
         .catalog {
 
@@ -547,10 +489,7 @@
             gap: 28px;
         }
 
-
-        /* =====================================================
-           CARD
-        ===================================================== */
+        /* CARDS */
 
         .consultation {
 
@@ -624,10 +563,7 @@
                 rgba(0, 0, 0, .6);
         }
 
-
-        /* =====================================================
-           PREMIUM
-        ===================================================== */
+        /* PREMIUM */
 
         .premium {
 
@@ -654,10 +590,7 @@
             letter-spacing: 2px;
         }
 
-
-        /* =====================================================
-           ÍCONE
-        ===================================================== */
+        /* ÍCONE */
 
         .icon {
 
@@ -672,10 +605,7 @@
                 );
         }
 
-
-        /* =====================================================
-           TEXTO DO CARD
-        ===================================================== */
+        /* TEXTO */
 
         .consultation h3 {
 
@@ -704,10 +634,7 @@
             font-size: 14px;
         }
 
-
-        /* =====================================================
-           PREÇO
-        ===================================================== */
+        /* PREÇO */
 
         .price {
 
@@ -721,10 +648,7 @@
                 0 0 15px #b800ff;
         }
 
-
-        /* =====================================================
-           BOTÃO
-        ===================================================== */
+        /* BOTÃO */
 
         .choose {
 
@@ -762,10 +686,7 @@
                 #b000ff;
         }
 
-
-        /* =====================================================
-           CARD PRINCIPAL
-        ===================================================== */
+        /* CARD PRINCIPAL */
 
         .featured {
 
@@ -787,10 +708,7 @@
                 rgba(164, 0, 255, .25);
         }
 
-
-        /* =====================================================
-           SEPARADOR
-        ===================================================== */
+        /* SEPARADOR */
 
         .separator {
 
@@ -809,15 +727,11 @@
                 );
         }
 
-
-        /* =====================================================
-           FINAL
-        ===================================================== */
+        /* FINAL */
 
         .final {
 
             position: relative;
-
             z-index: 5;
 
             text-align: center;
@@ -848,15 +762,11 @@
             line-height: 1.8;
         }
 
-
-        /* =====================================================
-           RODAPÉ
-        ===================================================== */
+        /* RODAPÉ */
 
         footer {
 
             position: relative;
-
             z-index: 5;
 
             text-align: center;
@@ -871,14 +781,10 @@
         }
 
         footer strong {
-
             color: #c36eff;
         }
 
-
-        /* =====================================================
-           CELULAR
-        ===================================================== */
+        /* CELULAR */
 
         @media(max-width: 700px) {
 
@@ -902,7 +808,6 @@
             }
 
             .hero {
-
                 padding-top: 90px;
             }
 
@@ -914,17 +819,14 @@
             }
 
             .category-title h2 {
-
                 font-size: 32px;
             }
 
             .magic-symbol {
-
                 opacity: .15;
             }
 
             .back {
-
                 font-size: 10px;
             }
         }
@@ -933,20 +835,15 @@
 
 </head>
 
-
 <body>
 
-
-<!-- =========================================================
-     UNIVERSO
-========================================================= -->
+<!-- UNIVERSO -->
 
 <div class="universe">
 
     <div class="nebula one"></div>
     <div class="nebula two"></div>
     <div class="nebula three"></div>
-
 
     <!-- ESTRELAS -->
 
@@ -975,7 +872,6 @@
     <span class="star" style="left:80%;top:84%;animation-delay:1.2s"></span>
     <span class="star big" style="left:95%;top:92%;animation-delay:.4s"></span>
 
-
     <!-- ENERGIA -->
 
     <span class="energy" style="left:8%;animation-delay:1s"></span>
@@ -987,15 +883,11 @@
     <span class="energy" style="left:84%;animation-delay:3s"></span>
     <span class="energy" style="left:94%;animation-delay:6s"></span>
 
-
-    <!-- SÍMBOLOS MÍSTICOS -->
+    <!-- SÍMBOLOS -->
 
     <div class="magic-symbol symbol-one">✡</div>
-
     <div class="magic-symbol symbol-two">☾</div>
-
     <div class="magic-symbol symbol-three">✦</div>
-
 
     <!-- LUA -->
 
@@ -1003,11 +895,7 @@
 
 </div>
 
-
-
-<!-- =========================================================
-     MENU
-========================================================= -->
+<!-- MENU -->
 
 <header>
 
@@ -1020,7 +908,6 @@
             ANGEL <span>WITCH</span>
         </a>
 
-
         <a
             href="index.html"
             class="back"
@@ -1032,18 +919,11 @@
 
 </header>
 
-
-
-<!-- =========================================================
-     CONTEÚDO
-========================================================= -->
+<!-- CONTEÚDO -->
 
 <main>
 
-
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    <!-- HERO -->
 
     <section class="hero">
 
@@ -1051,11 +931,9 @@
             ✦ O catálogo da Angel WITCH ✦
         </small>
 
-
         <h1>
             CONSULTAS
         </h1>
-
 
         <p>
             Cada leitura possui sua própria energia,
@@ -1066,11 +944,7 @@
 
     </section>
 
-
-
-    <!-- =====================================================
-         AMOR
-    ====================================================== -->
+    <!-- AMOR -->
 
     <section class="category">
 
@@ -1086,9 +960,7 @@
 
         </div>
 
-
         <div class="catalog">
-
 
             <!-- PALÁCIO DO AMOR -->
 
@@ -1098,21 +970,17 @@
                     ✦ EXPERIÊNCIA ESPECIAL
                 </div>
 
-
                 <div class="icon">
                     🏰💜
                 </div>
-
 
                 <h3>
                     Palácio do Amor
                 </h3>
 
-
                 <div class="subtitle">
                     SENTIMENTOS • CONEXÕES • CAMINHOS
                 </div>
-
 
                 <p>
                     Uma leitura dedicada ao universo afetivo.
@@ -1121,11 +989,9 @@
                     amorosa.
                 </p>
 
-
                 <div class="price">
-                    R$ 15
+                    R$ 77
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1135,8 +1001,6 @@
                 </a>
 
             </article>
-
-
 
             <!-- MERCÚRIO DO AMOR -->
 
@@ -1146,16 +1010,13 @@
                     ☿💜
                 </div>
 
-
                 <h3>
                     Mercúrio do Amor
                 </h3>
 
-
                 <div class="subtitle">
                     COMUNICAÇÃO • INTENÇÕES • CONVERSAS
                 </div>
-
 
                 <p>
                     Uma leitura voltada para comunicação,
@@ -1163,11 +1024,9 @@
                     ser compreendidas dentro de uma conexão.
                 </p>
 
-
                 <div class="price">
-                    R$ 50
+                    R$ 77
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1177,8 +1036,6 @@
                 </a>
 
             </article>
-
-
 
             <!-- TIRAGEM DO AMOR -->
 
@@ -1188,16 +1045,13 @@
                     💌🔮
                 </div>
 
-
                 <h3>
                     Tiragem do Amor
                 </h3>
 
-
                 <div class="subtitle">
                     5 PONTOS DA VIDA AFETIVA
                 </div>
-
 
                 <p>
                     Uma leitura que explora sentimentos,
@@ -1205,11 +1059,9 @@
                     e uma orientação simbólica das cartas.
                 </p>
 
-
                 <div class="price">
-                    R$ 50
+                    R$ 77
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1220,20 +1072,13 @@
 
             </article>
 
-
         </div>
 
     </section>
 
-
-
     <div class="separator"></div>
 
-
-
-    <!-- =====================================================
-         ORÁCULO
-    ====================================================== -->
+    <!-- ORÁCULO -->
 
     <section class="category">
 
@@ -1249,9 +1094,7 @@
 
         </div>
 
-
         <div class="catalog">
-
 
             <article class="consultation featured">
 
@@ -1259,21 +1102,17 @@
                     ✦ EXPERIÊNCIA ORACULAR
                 </div>
 
-
                 <div class="icon">
                     🔮✨
                 </div>
-
 
                 <h3>
                     Oráculo Místico
                 </h3>
 
-
                 <div class="subtitle">
                     AMOR • CAMINHOS • VIDA • ESCOLHAS
                 </div>
-
 
                 <p>
                     Escolha um tema e explore,
@@ -1282,11 +1121,9 @@
                     o momento que você está vivendo.
                 </p>
 
-
                 <div class="price">
                     R$ 50
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1297,20 +1134,13 @@
 
             </article>
 
-
         </div>
 
     </section>
 
-
-
     <div class="separator"></div>
 
-
-
-    <!-- =====================================================
-         VIDA PASSADA
-    ====================================================== -->
+    <!-- VIDA PASSADA -->
 
     <section class="category">
 
@@ -1326,9 +1156,7 @@
 
         </div>
 
-
         <div class="catalog">
-
 
             <!-- CAMINHOS DE OUTRAS VIDAS -->
 
@@ -1338,21 +1166,17 @@
                     ✦ EXPERIÊNCIA PREMIUM
                 </div>
 
-
                 <div class="icon">
                     🌙🃏
                 </div>
-
 
                 <h3>
                     Caminhos de Outras Vidas
                 </h3>
 
-
                 <div class="subtitle">
                     MEMÓRIAS • PADRÕES • ARQUÉTIPOS
                 </div>
-
 
                 <p>
                     Uma leitura simbólica inspirada
@@ -1361,11 +1185,9 @@
                     arquétipos apresentados pelas cartas.
                 </p>
 
-
                 <div class="price">
                     R$ 210
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1375,8 +1197,6 @@
                 </a>
 
             </article>
-
-
 
             <!-- CAMINHADA AO SUCESSO -->
 
@@ -1386,16 +1206,13 @@
                     👑✨
                 </div>
 
-
                 <h3>
                     Caminhada ao Sucesso
                 </h3>
 
-
                 <div class="subtitle">
                     PROPÓSITO • CAMINHOS • POSSIBILIDADES
                 </div>
-
 
                 <p>
                     Uma leitura simbólica para explorar
@@ -1404,11 +1221,9 @@
                     apresentados pelas cartas.
                 </p>
 
-
                 <div class="price">
                     R$ 50
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1419,20 +1234,13 @@
 
             </article>
 
-
         </div>
 
     </section>
 
-
-
     <div class="separator"></div>
 
-
-
-    <!-- =====================================================
-         3 PERGUNTAS
-    ====================================================== -->
+    <!-- 3 PERGUNTAS -->
 
     <section class="category">
 
@@ -1448,9 +1256,7 @@
 
         </div>
 
-
         <div class="catalog">
-
 
             <article class="consultation">
 
@@ -1458,16 +1264,13 @@
                     🃏✨
                 </div>
 
-
                 <h3>
                     3 Perguntas
                 </h3>
 
-
                 <div class="subtitle">
                     AMOR • FINANCEIRO • ESPIRITUAL
                 </div>
-
 
                 <p>
                     Escolha até três questões para levar
@@ -1476,11 +1279,9 @@
                     em uma mesma leitura.
                 </p>
 
-
                 <div class="price">
-                    R$ 50
+                    R$ 15
                 </div>
-
 
                 <a
                     href="agendamento.html"
@@ -1491,16 +1292,11 @@
 
             </article>
 
-
         </div>
 
     </section>
 
-
-
-    <!-- =====================================================
-         FINAL
-    ====================================================== -->
+    <!-- FINAL -->
 
     <section class="final">
 
@@ -1510,12 +1306,10 @@
             há possibilidades.
         </h2>
 
-
         <p>
             Escolha sua experiência e entre
             no universo da Angel WITCH.
         </p>
-
 
         <a
             href="agendamento.html"
@@ -1526,14 +1320,9 @@
 
     </section>
 
-
 </main>
 
-
-
-<!-- =========================================================
-     RODAPÉ
-========================================================= -->
+<!-- RODAPÉ -->
 
 <footer>
 
@@ -1541,13 +1330,11 @@
         ✦ <strong>ANGEL WITCH</strong> ✦
     </p>
 
-
     <p style="margin-top:10px;">
         Através das cartas, há possibilidades.
     </p>
 
 </footer>
-
 
 </body>
 
