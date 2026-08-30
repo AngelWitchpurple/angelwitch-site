@@ -1,9 +1,9 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="google-site-verification"
@@ -18,6 +18,10 @@
 
     <style>
 
+        /* =====================================================
+           RESET
+        ===================================================== */
+
         * {
             margin: 0;
             padding: 0;
@@ -31,8 +35,13 @@
         body {
             min-height: 100vh;
             overflow-x: hidden;
+
             color: white;
-            font-family: Georgia, "Times New Roman", serif;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
 
             background:
                 radial-gradient(
@@ -54,19 +63,26 @@
                 #050008;
         }
 
+
         /* =====================================================
-           UNIVERSO
+           UNIVERSO MÁGICO
         ===================================================== */
 
         .universe {
             position: fixed;
             inset: 0;
+
             z-index: 0;
+
             overflow: hidden;
+
             pointer-events: none;
         }
 
-        /* ESTRELAS */
+
+        /* =====================================================
+           ESTRELAS
+        ===================================================== */
 
         .stars {
             position: absolute;
@@ -75,17 +91,21 @@
 
         .star {
             position: absolute;
+
             width: 3px;
             height: 3px;
-            background: white;
+
             border-radius: 50%;
+
+            background: white;
 
             box-shadow:
                 0 0 8px white,
                 0 0 18px #c66cff,
                 0 0 30px #9700ff;
 
-            animation: brilho 2.5s infinite ease-in-out;
+            animation:
+                brilho 2.5s infinite ease-in-out;
         }
 
         .star.big {
@@ -95,7 +115,8 @@
 
         @keyframes brilho {
 
-            0%, 100% {
+            0%,
+            100% {
                 opacity: .25;
                 transform: scale(.6);
             }
@@ -105,6 +126,7 @@
                 transform: scale(1.8);
             }
         }
+
 
         /* =====================================================
            LUA
@@ -135,7 +157,8 @@
                 0 0 60px #c56cff,
                 0 0 130px #9400ff;
 
-            animation: lua 5s infinite ease-in-out;
+            animation:
+                lua 5s infinite ease-in-out;
         }
 
         .moon::after {
@@ -146,17 +169,18 @@
             width: 195px;
             height: 195px;
 
+            left: 55px;
+            top: -15px;
+
             border-radius: 50%;
 
             background: #08000f;
-
-            left: 55px;
-            top: -15px;
         }
 
         @keyframes lua {
 
-            0%, 100% {
+            0%,
+            100% {
                 transform: scale(1);
                 filter: brightness(1);
             }
@@ -167,8 +191,9 @@
             }
         }
 
+
         /* =====================================================
-           ENERGIA
+           ENERGIAS
         ===================================================== */
 
         .energy {
@@ -185,7 +210,8 @@
                 0 0 10px #df9aff,
                 0 0 25px #9c00ff;
 
-            animation: energia 12s linear infinite;
+            animation:
+                energia 12s linear infinite;
         }
 
         @keyframes energia {
@@ -217,14 +243,16 @@
             }
         }
 
+
         /* =====================================================
-           SIMBOLOS
+           SÍMBOLOS MÍSTICOS
         ===================================================== */
 
         .symbol {
             position: absolute;
 
-            color: rgba(218, 147, 255, .3);
+            color:
+                rgba(218, 147, 255, .3);
 
             font-size: 80px;
 
@@ -233,8 +261,7 @@
                 0 0 40px #7a00b8;
 
             animation:
-                flutuar 7s ease-in-out infinite,
-                girar 18s linear infinite;
+                flutuar 7s ease-in-out infinite;
         }
 
         .s1 {
@@ -245,27 +272,34 @@
         .s2 {
             right: 5%;
             top: 60%;
+
             font-size: 65px;
+
             animation-delay: 2s;
         }
 
         .s3 {
             left: 20%;
             bottom: 10%;
+
             font-size: 55px;
+
             animation-delay: 4s;
         }
 
         .s4 {
             right: 22%;
             bottom: 13%;
+
             font-size: 50px;
+
             animation-delay: 1s;
         }
 
         @keyframes flutuar {
 
-            0%, 100% {
+            0%,
+            100% {
                 transform: translateY(0);
             }
 
@@ -274,19 +308,9 @@
             }
         }
 
-        @keyframes girar {
-
-            from {
-                rotate: 0deg;
-            }
-
-            to {
-                rotate: 360deg;
-            }
-        }
 
         /* =====================================================
-           CARTAS
+           CARTAS FLUTUANTES
         ===================================================== */
 
         .card {
@@ -305,7 +329,8 @@
                     #170020
                 );
 
-            border: 2px solid #c87aff;
+            border:
+                2px solid #c87aff;
 
             box-shadow:
                 0 0 20px #9400ff,
@@ -313,7 +338,8 @@
 
             opacity: .75;
 
-            animation: carta 7s ease-in-out infinite;
+            animation:
+                carta 7s ease-in-out infinite;
         }
 
         .card::before {
@@ -323,9 +349,11 @@
 
             inset: 10px;
 
-            border: 1px solid #dca4ff;
+            border:
+                1px solid #dca4ff;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
@@ -340,12 +368,14 @@
         .card.one {
             left: 7%;
             top: 40%;
+
             rotate: -17deg;
         }
 
         .card.two {
             right: 8%;
             top: 47%;
+
             rotate: 15deg;
 
             animation-delay: 2s;
@@ -373,14 +403,20 @@
 
         @keyframes carta {
 
-            0%, 100% {
-                transform: translateY(0) rotate(0deg);
+            0%,
+            100% {
+                transform:
+                    translateY(0)
+                    rotate(0deg);
             }
 
             50% {
-                transform: translateY(-30px) rotate(5deg);
+                transform:
+                    translateY(-30px)
+                    rotate(5deg);
             }
         }
+
 
         /* =====================================================
            MENU
@@ -416,7 +452,6 @@
             display: flex;
 
             justify-content: center;
-
             align-items: center;
 
             gap: 34px;
@@ -451,6 +486,7 @@
             transform: translateY(-2px);
         }
 
+
         /* =====================================================
            HERO
         ===================================================== */
@@ -459,6 +495,7 @@
             min-height: 100vh;
 
             position: relative;
+
             z-index: 2;
 
             display: flex;
@@ -468,7 +505,8 @@
 
             text-align: center;
 
-            padding: 130px 20px 80px;
+            padding:
+                130px 20px 80px;
         }
 
         .hero-content {
@@ -491,7 +529,8 @@
         }
 
         .hero h1 {
-            font-size: clamp(65px, 13vw, 155px);
+            font-size:
+                clamp(65px, 13vw, 155px);
 
             line-height: .82;
 
@@ -505,12 +544,14 @@
                 0 0 55px #a000ff,
                 0 0 110px #7200ad;
 
-            animation: titulo 4s infinite ease-in-out;
+            animation:
+                titulo 4s infinite ease-in-out;
         }
 
         @keyframes titulo {
 
-            0%, 100% {
+            0%,
+            100% {
                 filter: brightness(1);
             }
 
@@ -524,7 +565,8 @@
 
             color: #ead4fa;
 
-            font-size: clamp(19px, 3vw, 29px);
+            font-size:
+                clamp(19px, 3vw, 29px);
 
             font-weight: normal;
 
@@ -534,7 +576,8 @@
         .hero p {
             max-width: 650px;
 
-            margin: 25px auto 40px;
+            margin:
+                25px auto 40px;
 
             color: #c9b7d5;
 
@@ -542,6 +585,7 @@
 
             font-size: 16px;
         }
+
 
         /* =====================================================
            BOTÕES
@@ -560,7 +604,8 @@
         .btn {
             display: inline-block;
 
-            padding: 17px 32px;
+            padding:
+                17px 32px;
 
             border-radius: 50px;
 
@@ -584,7 +629,8 @@
                     #510078
                 );
 
-            border: 1px solid #db8cff;
+            border:
+                1px solid #db8cff;
 
             box-shadow:
                 0 0 20px #8d00d9,
@@ -592,7 +638,9 @@
         }
 
         .primary:hover {
-            transform: translateY(-5px) scale(1.04);
+            transform:
+                translateY(-5px)
+                scale(1.04);
 
             box-shadow:
                 0 0 30px #b900ff,
@@ -602,20 +650,26 @@
         .secondary {
             color: #e5c9f8;
 
-            border: 1px solid #9f6bb8;
+            border:
+                1px solid #9f6bb8;
 
-            background: rgba(255,255,255,.04);
+            background:
+                rgba(255,255,255,.04);
 
             backdrop-filter: blur(10px);
         }
 
         .secondary:hover {
-            transform: translateY(-5px);
+            transform:
+                translateY(-5px);
 
-            border-color: #d78aff;
+            border-color:
+                #d78aff;
 
-            background: rgba(150,0,255,.15);
+            background:
+                rgba(150,0,255,.15);
         }
+
 
         /* =====================================================
            CONSULTAS
@@ -626,7 +680,8 @@
 
             z-index: 5;
 
-            padding: 110px 6%;
+            padding:
+                110px 6%;
 
             background:
                 linear-gradient(
@@ -653,7 +708,8 @@
         .title h2 {
             margin-top: 15px;
 
-            font-size: clamp(35px, 6vw, 60px);
+            font-size:
+                clamp(35px, 6vw, 60px);
 
             text-shadow:
                 0 0 20px #9500df;
@@ -677,13 +733,17 @@
             display: grid;
 
             grid-template-columns:
-                repeat(auto-fit, minmax(240px, 1fr));
+                repeat(
+                    auto-fit,
+                    minmax(240px, 1fr)
+                );
 
             gap: 25px;
         }
 
         .service {
-            padding: 35px 28px;
+            padding:
+                35px 28px;
 
             min-height: 285px;
 
@@ -696,22 +756,30 @@
                     rgba(12,0,22,.9)
                 );
 
-            border: 1px solid rgba(210,135,255,.3);
+            border:
+                1px solid
+                rgba(210,135,255,.3);
 
             box-shadow:
-                0 0 30px rgba(140,0,210,.2),
-                inset 0 0 25px rgba(255,255,255,.02);
+                0 0 30px
+                rgba(140,0,210,.2),
+
+                inset 0 0 25px
+                rgba(255,255,255,.02);
 
             transition: .4s;
         }
 
         .service:hover {
-            transform: translateY(-12px);
+            transform:
+                translateY(-12px);
 
-            border-color: #d18aff;
+            border-color:
+                #d18aff;
 
             box-shadow:
-                0 0 40px rgba(170,0,255,.45);
+                0 0 40px
+                rgba(170,0,255,.45);
         }
 
         .icon {
@@ -720,7 +788,9 @@
             margin-bottom: 20px;
 
             filter:
-                drop-shadow(0 0 12px #bd43ff);
+                drop-shadow(
+                    0 0 12px #bd43ff
+                );
         }
 
         .service h3 {
@@ -747,7 +817,17 @@
             text-decoration: none;
 
             letter-spacing: 1px;
+
+            transition: .3s;
         }
+
+        .service a:hover {
+            color: white;
+
+            text-shadow:
+                0 0 15px #b900ff;
+        }
+
 
         /* =====================================================
            UNIVERSO
@@ -758,7 +838,8 @@
 
             z-index: 5;
 
-            padding: 120px 20px;
+            padding:
+                120px 20px;
 
             text-align: center;
 
@@ -771,7 +852,8 @@
         }
 
         .universe-section h2 {
-            font-size: clamp(40px, 7vw, 75px);
+            font-size:
+                clamp(40px, 7vw, 75px);
 
             text-shadow:
                 0 0 20px #a800ff,
@@ -781,12 +863,14 @@
         .universe-section p {
             max-width: 700px;
 
-            margin: 25px auto 35px;
+            margin:
+                25px auto 35px;
 
             color: #c3b0ce;
 
             line-height: 1.8;
         }
+
 
         /* =====================================================
            RODAPÉ
@@ -801,7 +885,9 @@
 
             padding: 45px 20px;
 
-            border-top: 1px solid rgba(210,130,255,.2);
+            border-top:
+                1px solid
+                rgba(210,130,255,.2);
 
             background: #050008;
 
@@ -812,6 +898,7 @@
             color: #ca7cff;
         }
 
+
         /* =====================================================
            CELULAR
         ===================================================== */
@@ -819,7 +906,8 @@
         @media (max-width: 800px) {
 
             header {
-                padding: 18px 12px;
+                padding:
+                    18px 12px;
             }
 
             nav {
@@ -828,6 +916,7 @@
 
             nav a {
                 font-size: 11px;
+
                 letter-spacing: .7px;
             }
 
@@ -848,7 +937,9 @@
 
             .card {
                 opacity: .25;
-                transform: scale(.7);
+
+                transform:
+                    scale(.7);
             }
 
             .card.one {
@@ -862,20 +953,33 @@
             .symbol {
                 opacity: .25;
             }
+
+            .hero h1 {
+                letter-spacing: 5px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 320px;
+            }
         }
 
     </style>
 </head>
 
+
 <body>
+
 
     <!-- =====================================================
          UNIVERSO MÁGICO
     ===================================================== -->
 
     <div class="universe">
-
-        <!-- ESTRELAS -->
 
         <div class="stars">
 
@@ -911,26 +1015,46 @@
 
         </div>
 
+
         <!-- ENERGIAS -->
 
-        <span class="energy" style="left:8%;animation-duration:12s;"></span>
-        <span class="energy" style="left:20%;animation-duration:16s;animation-delay:2s;"></span>
-        <span class="energy" style="left:33%;animation-duration:13s;animation-delay:5s;"></span>
-        <span class="energy" style="left:47%;animation-duration:18s;animation-delay:1s;"></span>
-        <span class="energy" style="left:61%;animation-duration:14s;animation-delay:4s;"></span>
-        <span class="energy" style="left:75%;animation-duration:17s;animation-delay:3s;"></span>
-        <span class="energy" style="left:90%;animation-duration:12s;animation-delay:6s;"></span>
+        <span class="energy"
+              style="left:8%;animation-duration:12s;"></span>
 
-        <!-- SÍMBOLOS MÍSTICOS -->
+        <span class="energy"
+              style="left:20%;animation-duration:16s;animation-delay:2s;"></span>
+
+        <span class="energy"
+              style="left:33%;animation-duration:13s;animation-delay:5s;"></span>
+
+        <span class="energy"
+              style="left:47%;animation-duration:18s;animation-delay:1s;"></span>
+
+        <span class="energy"
+              style="left:61%;animation-duration:14s;animation-delay:4s;"></span>
+
+        <span class="energy"
+              style="left:75%;animation-duration:17s;animation-delay:3s;"></span>
+
+        <span class="energy"
+              style="left:90%;animation-duration:12s;animation-delay:6s;"></span>
+
+
+        <!-- SÍMBOLOS -->
 
         <div class="symbol s1">✡</div>
+
         <div class="symbol s2">☯</div>
+
         <div class="symbol s3">☾</div>
+
         <div class="symbol s4">✦</div>
+
 
         <!-- LUA -->
 
         <div class="moon"></div>
+
 
         <!-- CARTAS -->
 
@@ -966,7 +1090,9 @@
                 ☾ UNIVERSO DAS CARTAS
             </a>
 
-            <a href="agendamento.html">
+            <!-- CORRIGIDO: consulta.html -->
+
+            <a href="consulta.html">
                 ✦ MINHA CONSULTA
             </a>
 
@@ -976,10 +1102,15 @@
 
 
     <!-- =====================================================
-         INÍCIO
+         CONTEÚDO PRINCIPAL
     ===================================================== -->
 
     <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================= -->
 
         <section class="hero">
 
@@ -1004,14 +1135,18 @@
                     uma nova perspectiva sobre sua jornada.
                 </p>
 
+
                 <div class="buttons">
 
+                    <!-- CORRIGIDO -->
+
                     <a
-                        href="agendamento.html"
+                        href="consulta.html"
                         class="btn primary"
                     >
                         ✦ VOU PARA MINHA CONSULTA
                     </a>
+
 
                     <a
                         href="#consultas"
@@ -1058,6 +1193,8 @@
             <div class="services">
 
 
+                <!-- AMOR -->
+
                 <article class="service">
 
                     <div class="icon">
@@ -1080,6 +1217,8 @@
 
                 </article>
 
+
+                <!-- ORÁCULO -->
 
                 <article class="service">
 
@@ -1104,6 +1243,8 @@
                 </article>
 
 
+                <!-- VIDA PASSADA -->
+
                 <article class="service">
 
                     <div class="icon">
@@ -1126,6 +1267,8 @@
 
                 </article>
 
+
+                <!-- 3 PERGUNTAS -->
 
                 <article class="service">
 
@@ -1196,8 +1339,10 @@
                 experiência dentro do universo Angel WITCH.
             </p>
 
+            <!-- CORRIGIDO -->
+
             <a
-                href="agendamento.html"
+                href="consulta.html"
                 class="btn primary"
             >
                 ✦ VOU PARA MINHA CONSULTA
@@ -1226,5 +1371,6 @@
 
 
 </body>
+
 </html>
 ```
