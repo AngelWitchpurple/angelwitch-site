@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -44,10 +43,6 @@
                 );
         }
 
-        /* =========================
-           UNIVERSO
-        ========================= */
-
         .universe {
             position: fixed;
             inset: 0;
@@ -89,6 +84,7 @@
         }
 
         @keyframes nebulaMove {
+
             0% {
                 transform: translate(0, 0) scale(1);
             }
@@ -97,10 +93,6 @@
                 transform: translate(70px, -50px) scale(1.25);
             }
         }
-
-        /* =========================
-           ESTRELAS
-        ========================= */
 
         .star {
             position: absolute;
@@ -123,6 +115,7 @@
         }
 
         @keyframes twinkle {
+
             0%,
             100% {
                 opacity: .15;
@@ -135,16 +128,11 @@
             }
         }
 
-        /* =========================
-           ENERGIAS
-        ========================= */
-
         .energy {
             position: absolute;
             width: 5px;
             height: 5px;
             border-radius: 50%;
-
             background: #d982ff;
 
             box-shadow:
@@ -156,6 +144,7 @@
         }
 
         @keyframes energyFloat {
+
             from {
                 transform:
                     translateY(110vh)
@@ -183,18 +172,12 @@
             }
         }
 
-        /* =========================
-           LUA
-        ========================= */
-
         .moon {
             position: absolute;
             width: 170px;
             height: 170px;
-
             top: 90px;
             right: 8%;
-
             border-radius: 50%;
 
             background:
@@ -217,20 +200,17 @@
 
         .moon::after {
             content: "";
-
             position: absolute;
-
             width: 175px;
             height: 175px;
-
             top: -12px;
             left: 55px;
-
             border-radius: 50%;
             background: #09000f;
         }
 
         @keyframes moonPulse {
+
             50% {
                 transform: scale(1.08);
 
@@ -240,10 +220,6 @@
                     0 0 180px #9000dd;
             }
         }
-
-        /* =========================
-           SÍMBOLOS
-        ========================= */
 
         .magic-symbol {
             position: absolute;
@@ -286,19 +262,15 @@
         }
 
         @keyframes symbolFloat {
+
             50% {
                 margin-top: -30px;
             }
         }
 
-        /* =========================
-           CABEÇALHO
-        ========================= */
-
         header {
             position: relative;
             z-index: 10;
-
             padding: 25px 6%;
 
             background:
@@ -322,7 +294,6 @@
         .logo {
             color: white;
             text-decoration: none;
-
             font-size: 24px;
             letter-spacing: 4px;
 
@@ -339,10 +310,8 @@
         .back {
             color: #c8a4d8;
             text-decoration: none;
-
             font-size: 13px;
             letter-spacing: 2px;
-
             transition: .3s;
         }
 
@@ -352,10 +321,6 @@
             text-shadow:
                 0 0 15px #c000ff;
         }
-
-        /* =========================
-           HERO
-        ========================= */
 
         .hero {
             position: relative;
@@ -390,19 +355,13 @@
 
         .hero p {
             max-width: 700px;
-
-            margin:
-                25px auto;
+            margin: 25px auto;
 
             color: #cbbbd4;
 
             line-height: 1.8;
             font-size: 16px;
         }
-
-        /* =========================
-           CATEGORIAS
-        ========================= */
 
         .category {
             position: relative;
@@ -434,10 +393,6 @@
             font-size: 15px;
         }
 
-        /* =========================
-           CATÁLOGO
-        ========================= */
-
         .catalog {
             display: grid;
 
@@ -450,14 +405,10 @@
             gap: 28px;
         }
 
-        /* =========================
-           CARD
-        ========================= */
-
         .consultation {
             position: relative;
 
-            min-height: 360px;
+            min-height: 420px;
 
             padding:
                 35px 28px;
@@ -503,6 +454,7 @@
             background: #b000ff;
 
             filter: blur(80px);
+
             opacity: .15;
         }
 
@@ -521,10 +473,6 @@
                 0 20px 70px
                 rgba(0, 0, 0, .6);
         }
-
-        /* =========================
-           PREMIUM
-        ========================= */
 
         .premium {
             display: inline-block;
@@ -549,10 +497,6 @@
             letter-spacing: 2px;
         }
 
-        /* =========================
-           ÍCONE
-        ========================= */
-
         .icon {
             font-size: 48px;
             margin-bottom: 18px;
@@ -564,10 +508,6 @@
                 );
         }
 
-        /* =========================
-           TEXTO
-        ========================= */
-
         .consultation h3 {
             font-size: 27px;
             margin-bottom: 8px;
@@ -575,37 +515,52 @@
 
         .subtitle {
             color: #d17cff;
-
             font-size: 12px;
             letter-spacing: 2px;
-
             margin-bottom: 18px;
         }
 
         .consultation p {
             color: #bcaec6;
-
             line-height: 1.7;
             font-size: 14px;
         }
 
-        /* =========================
-           PREÇO
-        ========================= */
+        .details {
+            margin-top: 20px;
+
+            padding: 15px;
+
+            border-radius: 15px;
+
+            background:
+                rgba(150, 0, 220, .10);
+
+            border:
+                1px solid
+                rgba(210, 130, 255, .20);
+
+            color: #d7c5df;
+
+            line-height: 1.6;
+
+            font-size: 13px;
+        }
+
+        .details strong {
+            color: #e3a5ff;
+        }
 
         .price {
             margin-top: 24px;
 
             font-size: 27px;
+
             color: white;
 
             text-shadow:
                 0 0 15px #b800ff;
         }
-
-        /* =========================
-           BOTÃO
-        ========================= */
 
         .choose {
             display: inline-block;
@@ -626,6 +581,7 @@
             text-decoration: none;
 
             font-size: 11px;
+
             letter-spacing: 2px;
 
             transition: .3s;
@@ -639,10 +595,6 @@
                 0 0 25px
                 #b000ff;
         }
-
-        /* =========================
-           CARD PRINCIPAL
-        ========================= */
 
         .featured {
             border-color:
@@ -663,10 +615,6 @@
                 rgba(164, 0, 255, .25);
         }
 
-        /* =========================
-           SEPARADOR
-        ========================= */
-
         .separator {
             width: 100%;
             height: 1px;
@@ -681,10 +629,6 @@
                     transparent
                 );
         }
-
-        /* =========================
-           FINAL
-        ========================= */
 
         .final {
             position: relative;
@@ -715,10 +659,6 @@
             line-height: 1.8;
         }
 
-        /* =========================
-           RODAPÉ
-        ========================= */
-
         footer {
             position: relative;
             z-index: 5;
@@ -738,10 +678,6 @@
             color: #c36eff;
         }
 
-        /* =========================
-           CELULAR
-        ========================= */
-
         @media(max-width: 700px) {
 
             .moon {
@@ -757,7 +693,6 @@
             .moon::after {
                 width: 105px;
                 height: 105px;
-
                 left: 32px;
             }
 
@@ -788,10 +723,6 @@
 </head>
 
 <body>
-
-<!-- =========================
-     UNIVERSO
-========================= -->
 
 <div class="universe">
 
@@ -841,10 +772,6 @@
 
 </div>
 
-<!-- =========================
-     MENU
-========================= -->
-
 <header>
 
     <nav>
@@ -863,395 +790,457 @@
 
 <main>
 
-<!-- =========================
-     HERO
-========================= -->
+    <section class="hero">
 
-<section class="hero">
+        <small>
+            ✦ O catálogo da Angel WITCH ✦
+        </small>
 
-    <small>
-        ✦ O catálogo da Angel WITCH ✦
-    </small>
+        <h1>
+            CONSULTAS
+        </h1>
 
-    <h1>
-        CONSULTAS
-    </h1>
+        <p>
+            Cada leitura possui sua própria energia,
+            propósito e experiência.
+            Escolha o caminho que mais combina
+            com aquilo que você deseja explorar.
+        </p>
 
-    <p>
-        Cada leitura possui sua própria energia,
-        propósito e experiência.
-        Escolha o caminho que mais combina
-        com aquilo que você deseja explorar.
-    </p>
+    </section>
 
-</section>
 
-<!-- =========================
-     PALÁCIO DO AMOR
-========================= -->
+    <!-- ================================
+         PALÁCIO DO AMOR
+    ================================= -->
 
-<section class="category">
+    <section class="category">
 
-    <div class="category-title">
+        <div class="category-title">
+
+            <h2>
+                💜 Palácio do Amor
+            </h2>
+
+            <p>
+                Para quem está solteiro e deseja explorar
+                os caminhos da vida amorosa.
+            </p>
+
+        </div>
+
+        <div class="catalog">
+
+            <article class="consultation featured">
+
+                <div class="premium">
+                    ✦ EXPERIÊNCIA ESPECIAL
+                </div>
+
+                <div class="icon">
+                    🏰💜
+                </div>
+
+                <h3>
+                    Palácio do Amor
+                </h3>
+
+                <div class="subtitle">
+                    SOLTEIRO • 5 PERGUNTAS • VIDA AMOROSA
+                </div>
+
+                <p>
+                    Uma leitura dedicada a quem está solteiro
+                    e deseja compreender melhor sua vida amorosa.
+                    Explore sentimentos, possibilidades, bloqueios
+                    e caminhos que podem se apresentar.
+                </p>
+
+                <div class="details">
+
+                    <strong>O que inclui:</strong><br>
+
+                    • Consulta para quem está solteiro<br>
+                    • 5 perguntas direcionadas<br>
+                    • Questões sobre vida amorosa<br>
+                    • Exploração de sentimentos e possibilidades
+
+                </div>
+
+                <div class="price">
+                    R$ 77,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    ESCOLHER CONSULTA
+                </a>
+
+            </article>
+
+
+            <!-- ================================
+                 MERCÚRIO DO AMOR
+            ================================= -->
+
+            <article class="consultation">
+
+                <div class="icon">
+                    ☿💜
+                </div>
+
+                <h3>
+                    Mercúrio do Amor
+                </h3>
+
+                <div class="subtitle">
+                    RELACIONAMENTO • 5 PERGUNTAS • CONEXÃO
+                </div>
+
+                <p>
+                    Uma leitura voltada para quem já está
+                    em um relacionamento e deseja compreender
+                    melhor a conexão, a comunicação e os
+                    sentimentos presentes na relação.
+                </p>
+
+                <div class="details">
+
+                    <strong>O que inclui:</strong><br>
+
+                    • Consulta para quem está em um relacionamento<br>
+                    • 5 perguntas direcionadas<br>
+                    • Comunicação e sentimentos<br>
+                    • Intenções e dinâmica da relação<br>
+                    • Caminhos da conexão
+
+                </div>
+
+                <div class="price">
+                    R$ 77,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    ESCOLHER CONSULTA
+                </a>
+
+            </article>
+
+
+            <!-- ================================
+                 TIRAGEM DO AMOR
+            ================================= -->
+
+            <article class="consultation">
+
+                <div class="icon">
+                    💌🔮
+                </div>
+
+                <h3>
+                    Tiragem do Amor
+                </h3>
+
+                <div class="subtitle">
+                    CAMINHO AMOROSO • ESPIRITUALIDADE • 7 PERGUNTAS
+                </div>
+
+                <p>
+                    Uma leitura voltada para a espiritualidade
+                    e para o caminho amoroso da pessoa,
+                    explorando as possibilidades apresentadas
+                    simbolicamente pelas cartas.
+                </p>
+
+                <div class="details">
+
+                    <strong>O que inclui:</strong><br>
+
+                    • Leitura espiritual do caminho amoroso<br>
+                    • 7 perguntas direcionadas<br>
+                    • Possibilidade da chegada de uma nova pessoa<br>
+                    • Investigação sobre possível pretendente<br>
+                    • Momento atual da vida amorosa<br>
+                    • Caminhos e possibilidades afetivas
+
+                </div>
+
+                <div class="price">
+                    R$ 77,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    ESCOLHER CONSULTA
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <div class="separator"></div>
+
+
+    <!-- ================================
+         ORÁCULO
+    ================================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+
+            <h2>
+                🔮 Oráculo Místico
+            </h2>
+
+            <p>
+                Uma mensagem para o seu momento.
+            </p>
+
+        </div>
+
+        <div class="catalog">
+
+            <article class="consultation featured">
+
+                <div class="premium">
+                    ✦ EXPERIÊNCIA ORACULAR
+                </div>
+
+                <div class="icon">
+                    🔮✨
+                </div>
+
+                <h3>
+                    Oráculo Místico
+                </h3>
+
+                <div class="subtitle">
+                    AMOR • CAMINHOS • VIDA • ESCOLHAS
+                </div>
+
+                <p>
+                    Escolha um tema e explore,
+                    através do simbolismo das cartas,
+                    diferentes perspectivas sobre
+                    o momento que você está vivendo.
+                </p>
+
+                <div class="price">
+                    R$ 50,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    CONSULTAR ORÁCULO
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <div class="separator"></div>
+
+
+    <!-- ================================
+         VIDA PASSADA
+    ================================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+
+            <h2>
+                🌙 Vida Passada
+            </h2>
+
+            <p>
+                Uma jornada simbólica através das cartas.
+            </p>
+
+        </div>
+
+        <div class="catalog">
+
+            <article class="consultation featured">
+
+                <div class="premium">
+                    ✦ EXPERIÊNCIA PREMIUM
+                </div>
+
+                <div class="icon">
+                    🌙🃏
+                </div>
+
+                <h3>
+                    Caminhos de Outras Vidas
+                </h3>
+
+                <div class="subtitle">
+                    MEMÓRIAS • PADRÕES • ARQUÉTIPOS
+                </div>
+
+                <p>
+                    Uma leitura simbólica inspirada
+                    no conceito de vidas passadas,
+                    explorando temas, padrões e
+                    arquétipos apresentados pelas cartas.
+                </p>
+
+                <div class="price">
+                    R$ 210,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    ESCOLHER CONSULTA
+                </a>
+
+            </article>
+
+
+            <article class="consultation">
+
+                <div class="icon">
+                    👑✨
+                </div>
+
+                <h3>
+                    Caminhada ao Sucesso
+                </h3>
+
+                <div class="subtitle">
+                    PROPÓSITO • CAMINHOS • POSSIBILIDADES
+                </div>
+
+                <p>
+                    Uma leitura simbólica para explorar
+                    objetivos, escolhas e possibilidades
+                    de crescimento, observando os caminhos
+                    apresentados pelas cartas.
+                </p>
+
+                <div class="price">
+                    R$ 50,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    ESCOLHER CONSULTA
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <div class="separator"></div>
+
+
+    <!-- ================================
+         3 PERGUNTAS
+    ================================= -->
+
+    <section class="category">
+
+        <div class="category-title">
+
+            <h2>
+                ✨ 3 Perguntas
+            </h2>
+
+            <p>
+                Três questões para levar às cartas.
+            </p>
+
+        </div>
+
+        <div class="catalog">
+
+            <article class="consultation">
+
+                <div class="icon">
+                    🃏✨
+                </div>
+
+                <h3>
+                    3 Perguntas
+                </h3>
+
+                <div class="subtitle">
+                    AMOR • FINANCEIRO • ESPIRITUAL
+                </div>
+
+                <p>
+                    Escolha até três questões para levar
+                    à sua consulta. Uma experiência objetiva
+                    para explorar diferentes assuntos
+                    em uma mesma leitura.
+                </p>
+
+                <div class="price">
+                    R$ 15,00
+                </div>
+
+                <a
+                    href="consulta.html"
+                    class="choose"
+                >
+                    ESCOLHER CONSULTA
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="final">
 
         <h2>
-            💜 Palácio do Amor
+            Através das cartas,
+            <br>
+            há possibilidades.
         </h2>
 
         <p>
-            Para questões que nascem do coração.
+            Escolha sua experiência e entre
+            no universo da Angel WITCH.
         </p>
 
-    </div>
-
-    <div class="catalog">
-
-        <article class="consultation featured">
-
-            <div class="premium">
-                ✦ EXPERIÊNCIA ESPECIAL
-            </div>
-
-            <div class="icon">
-                🏰💜
-            </div>
-
-            <h3>
-                Palácio do Amor
-            </h3>
-
-            <div class="subtitle">
-                SENTIMENTOS • CONEXÕES • CAMINHOS
-            </div>
-
-            <p>
-                Uma leitura dedicada ao universo afetivo.
-                Explore sentimentos, conexões, bloqueios
-                e possibilidades dentro de uma situação
-                amorosa.
-            </p>
-
-            <div class="price">
-                R$ 77,00
-            </div>
-
-            <!-- CORRIGIDO: vai para consulta.html -->
-            <a href="consulta.html" class="choose">
-                ESCOLHER CONSULTA
-            </a>
-
-        </article>
-
-        <article class="consultation">
-
-            <div class="icon">
-                ☿💜
-            </div>
-
-            <h3>
-                Mercúrio do Amor
-            </h3>
-
-            <div class="subtitle">
-                COMUNICAÇÃO • INTENÇÕES • CONVERSAS
-            </div>
-
-            <p>
-                Uma leitura voltada para comunicação,
-                aproximações e questões que precisam
-                ser compreendidas dentro de uma conexão.
-            </p>
-
-            <div class="price">
-                R$ 77,00
-            </div>
-
-            <!-- CORRIGIDO -->
-            <a href="consulta.html" class="choose">
-                ESCOLHER CONSULTA
-            </a>
-
-        </article>
-
-        <article class="consultation">
-
-            <div class="icon">
-                💌🔮
-            </div>
-
-            <h3>
-                Tiragem do Amor
-            </h3>
-
-            <div class="subtitle">
-                5 PONTOS DA VIDA AFETIVA
-            </div>
-
-            <p>
-                Uma leitura que explora sentimentos,
-                intenções, caminhos, possíveis bloqueios
-                e uma orientação simbólica das cartas.
-            </p>
-
-            <div class="price">
-                R$ 77,00
-            </div>
-
-            <!-- CORRIGIDO -->
-            <a href="consulta.html" class="choose">
-                ESCOLHER CONSULTA
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-<div class="separator"></div>
-
-<!-- =========================
-     ORÁCULO
-========================= -->
-
-<section class="category">
-
-    <div class="category-title">
-
-        <h2>
-            🔮 Oráculo Místico
-        </h2>
-
-        <p>
-            Uma mensagem para o seu momento.
-        </p>
-
-    </div>
-
-    <div class="catalog">
-
-        <article class="consultation featured">
-
-            <div class="premium">
-                ✦ EXPERIÊNCIA ORACULAR
-            </div>
-
-            <div class="icon">
-                🔮✨
-            </div>
-
-            <h3>
-                Oráculo Místico
-            </h3>
-
-            <div class="subtitle">
-                AMOR • CAMINHOS • VIDA • ESCOLHAS
-            </div>
-
-            <p>
-                Escolha um tema e explore,
-                através do simbolismo das cartas,
-                diferentes perspectivas sobre
-                o momento que você está vivendo.
-            </p>
-
-            <div class="price">
-                R$ 50,00
-            </div>
-
-            <!-- CORRIGIDO -->
-            <a href="consulta.html" class="choose">
-                CONSULTAR ORÁCULO
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-<div class="separator"></div>
-
-<!-- =========================
-     VIDA PASSADA
-========================= -->
-
-<section class="category">
-
-    <div class="category-title">
-
-        <h2>
-            🌙 Vida Passada
-        </h2>
-
-        <p>
-            Uma jornada simbólica através das cartas.
-        </p>
-
-    </div>
-
-    <div class="catalog">
-
-        <article class="consultation featured">
-
-            <div class="premium">
-                ✦ EXPERIÊNCIA PREMIUM
-            </div>
-
-            <div class="icon">
-                🌙🃏
-            </div>
-
-            <h3>
-                Caminhos de Outras Vidas
-            </h3>
-
-            <div class="subtitle">
-                MEMÓRIAS • PADRÕES • ARQUÉTIPOS
-            </div>
-
-            <p>
-                Uma leitura simbólica inspirada
-                no conceito de vidas passadas,
-                explorando temas, padrões e
-                arquétipos apresentados pelas cartas.
-            </p>
-
-            <div class="price">
-                R$ 210,00
-            </div>
-
-            <!-- CORRIGIDO -->
-            <a href="consulta.html" class="choose">
-                ESCOLHER CONSULTA
-            </a>
-
-        </article>
-
-        <article class="consultation">
-
-            <div class="icon">
-                👑✨
-            </div>
-
-            <h3>
-                Caminhada ao Sucesso
-            </h3>
-
-            <div class="subtitle">
-                PROPÓSITO • CAMINHOS • POSSIBILIDADES
-            </div>
-
-            <p>
-                Uma leitura simbólica para explorar
-                objetivos, escolhas e possibilidades
-                de crescimento, observando os caminhos
-                apresentados pelas cartas.
-            </p>
-
-            <div class="price">
-                R$ 50,00
-            </div>
-
-            <!-- CORRIGIDO -->
-            <a href="consulta.html" class="choose">
-                ESCOLHER CONSULTA
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-<div class="separator"></div>
-
-<!-- =========================
-     3 PERGUNTAS
-========================= -->
-
-<section class="category">
-
-    <div class="category-title">
-
-        <h2>
-            ✨ 3 Perguntas
-        </h2>
-
-        <p>
-            Três questões para levar às cartas.
-        </p>
-
-    </div>
-
-    <div class="catalog">
-
-        <article class="consultation">
-
-            <div class="icon">
-                🃏✨
-            </div>
-
-            <h3>
-                3 Perguntas
-            </h3>
-
-            <div class="subtitle">
-                AMOR • FINANCEIRO • ESPIRITUAL
-            </div>
-
-            <p>
-                Escolha até três questões para levar
-                à sua consulta. Uma experiência objetiva
-                para explorar diferentes assuntos
-                em uma mesma leitura.
-            </p>
-
-            <!-- ÚNICO VALOR ALTERADO PARA R$ 15 -->
-            <div class="price">
-                R$ 15,00
-            </div>
-
-            <!-- CORRIGIDO -->
-            <a href="consulta.html" class="choose">
-                ESCOLHER CONSULTA
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     FINAL
-========================= -->
-
-<section class="final">
-
-    <h2>
-        Através das cartas,
-        <br>
-        há possibilidades.
-    </h2>
-
-    <p>
-        Escolha sua experiência e entre
-        no universo da Angel WITCH.
-    </p>
-
-    <!-- CORRIGIDO -->
-    <a href="consulta.html" class="choose">
-        ✦ VOU PARA MINHA CONSULTA ✦
-    </a>
-
-</section>
+        <a
+            href="consulta.html"
+            class="choose"
+        >
+            ✦ AGENDAR MINHA CONSULTA ✦
+        </a>
+
+    </section>
 
 </main>
 
-<!-- =========================
-     RODAPÉ
-========================= -->
 
 <footer>
 
@@ -1266,5 +1255,5 @@
 </footer>
 
 </body>
+
 </html>
-```
