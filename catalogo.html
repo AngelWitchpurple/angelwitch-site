@@ -123,7 +123,8 @@
         }
 
         @keyframes twinkle {
-            0%, 100% {
+            0%,
+            100% {
                 opacity: .15;
                 transform: scale(.5);
             }
@@ -155,7 +156,6 @@
         }
 
         @keyframes energyFloat {
-
             from {
                 transform:
                     translateY(110vh)
@@ -189,7 +189,6 @@
 
         .moon {
             position: absolute;
-
             width: 170px;
             height: 170px;
 
@@ -228,12 +227,10 @@
             left: 55px;
 
             border-radius: 50%;
-
             background: #09000f;
         }
 
         @keyframes moonPulse {
-
             50% {
                 transform: scale(1.08);
 
@@ -372,9 +369,7 @@
 
         .hero small {
             color: #d27cff;
-
             letter-spacing: 6px;
-
             text-transform: uppercase;
         }
 
@@ -395,7 +390,9 @@
 
         .hero p {
             max-width: 700px;
-            margin: 25px auto;
+
+            margin:
+                25px auto;
 
             color: #cbbbd4;
 
@@ -506,7 +503,6 @@
             background: #b000ff;
 
             filter: blur(80px);
-
             opacity: .15;
         }
 
@@ -550,7 +546,6 @@
                 rgba(220, 150, 255, .5);
 
             font-size: 10px;
-
             letter-spacing: 2px;
         }
 
@@ -582,7 +577,6 @@
             color: #d17cff;
 
             font-size: 12px;
-
             letter-spacing: 2px;
 
             margin-bottom: 18px;
@@ -592,7 +586,6 @@
             color: #bcaec6;
 
             line-height: 1.7;
-
             font-size: 14px;
         }
 
@@ -604,7 +597,6 @@
             margin-top: 24px;
 
             font-size: 27px;
-
             color: white;
 
             text-shadow:
@@ -634,7 +626,6 @@
             text-decoration: none;
 
             font-size: 11px;
-
             letter-spacing: 2px;
 
             transition: .3s;
@@ -850,7 +841,6 @@
 
 </div>
 
-
 <!-- =========================
      MENU
 ========================= -->
@@ -859,18 +849,17 @@
 
     <nav>
 
-        <a href="./index.html" class="logo">
+        <a href="index.html" class="logo">
             ANGEL <span>WITCH</span>
         </a>
 
-        <a href="./index.html" class="back">
+        <a href="index.html" class="back">
             ← VOLTAR AO INÍCIO
         </a>
 
     </nav>
 
 </header>
-
 
 <main>
 
@@ -897,9 +886,8 @@
 
 </section>
 
-
 <!-- =========================
-     AMOR
+     PALÁCIO DO AMOR
 ========================= -->
 
 <section class="category">
@@ -917,8 +905,6 @@
     </div>
 
     <div class="catalog">
-
-        <!-- PALÁCIO DO AMOR -->
 
         <article class="consultation featured">
 
@@ -949,14 +935,12 @@
                 R$ 77,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO: vai para consulta.html -->
+            <a href="consulta.html" class="choose">
                 ESCOLHER CONSULTA
             </a>
 
         </article>
-
-
-        <!-- MERCÚRIO DO AMOR -->
 
         <article class="consultation">
 
@@ -982,14 +966,12 @@
                 R$ 77,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO -->
+            <a href="consulta.html" class="choose">
                 ESCOLHER CONSULTA
             </a>
 
         </article>
-
-
-        <!-- TIRAGEM DO AMOR -->
 
         <article class="consultation">
 
@@ -1015,7 +997,8 @@
                 R$ 77,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO -->
+            <a href="consulta.html" class="choose">
                 ESCOLHER CONSULTA
             </a>
 
@@ -1025,9 +1008,7 @@
 
 </section>
 
-
 <div class="separator"></div>
-
 
 <!-- =========================
      ORÁCULO
@@ -1078,7 +1059,8 @@
                 R$ 50,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO -->
+            <a href="consulta.html" class="choose">
                 CONSULTAR ORÁCULO
             </a>
 
@@ -1088,9 +1070,7 @@
 
 </section>
 
-
 <div class="separator"></div>
-
 
 <!-- =========================
      VIDA PASSADA
@@ -1111,8 +1091,6 @@
     </div>
 
     <div class="catalog">
-
-        <!-- CAMINHOS DE OUTRAS VIDAS -->
 
         <article class="consultation featured">
 
@@ -1143,14 +1121,12 @@
                 R$ 210,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO -->
+            <a href="consulta.html" class="choose">
                 ESCOLHER CONSULTA
             </a>
 
         </article>
-
-
-        <!-- CAMINHADA AO SUCESSO -->
 
         <article class="consultation">
 
@@ -1177,7 +1153,8 @@
                 R$ 50,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO -->
+            <a href="consulta.html" class="choose">
                 ESCOLHER CONSULTA
             </a>
 
@@ -1187,9 +1164,7 @@
 
 </section>
 
-
 <div class="separator"></div>
-
 
 <!-- =========================
      3 PERGUNTAS
@@ -1211,11 +1186,7 @@
 
     <div class="catalog">
 
-        <article class="consultation featured">
-
-            <div class="premium">
-                ✦ CONSULTA OBJETIVA
-            </div>
+        <article class="consultation">
 
             <div class="icon">
                 🃏✨
@@ -1236,11 +1207,13 @@
                 em uma mesma leitura.
             </p>
 
+            <!-- ÚNICO VALOR ALTERADO PARA R$ 15 -->
             <div class="price">
                 R$ 15,00
             </div>
 
-            <a href="./agendamento.html" class="choose">
+            <!-- CORRIGIDO -->
+            <a href="consulta.html" class="choose">
                 ESCOLHER CONSULTA
             </a>
 
@@ -1249,7 +1222,6 @@
     </div>
 
 </section>
-
 
 <!-- =========================
      FINAL
@@ -1268,14 +1240,14 @@
         no universo da Angel WITCH.
     </p>
 
-    <a href="./agendamento.html" class="choose">
-        ✦ AGENDAR MINHA CONSULTA ✦
+    <!-- CORRIGIDO -->
+    <a href="consulta.html" class="choose">
+        ✦ VOU PARA MINHA CONSULTA ✦
     </a>
 
 </section>
 
 </main>
-
 
 <!-- =========================
      RODAPÉ
@@ -1294,6 +1266,5 @@
 </footer>
 
 </body>
-
 </html>
 ```
